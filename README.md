@@ -4,6 +4,8 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B012 — The Refused Party](episodes/B012-the-refused-party.html)** — seven original acts of John's refusal, Bernard's borrowed popularity collapsing, Lenina's disappointment, and friendship between John and Helmholtz over Shakespeare.
+- [Witness Crosswalk 012](witness-crosswalk-012.html) — expectations versus consent, conditional social approval versus chosen friendship.
 - **[PLAY B011 — London's New Curiosity](episodes/B011-londons-new-curiosity.html)** — seven animated scenes of John's celebrity, Linda's soma holiday, Bernard's borrowed popularity, factory and Eton visits, and the feelies date.
 - [Witness Crosswalk 011](witness-crosswalk-011.html) — public curiosity, personal understanding, independent source roots and distinct reactions to shared entertainment.
 - **[PLAY B010 — The Director's Confrontation](episodes/B010-the-directors-confrontation.html)** — seven original Canvas scenes from the public Iceland accusation to the arrival of Linda and John and the Director's exit.
@@ -30,7 +32,7 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, and **Chapters One through Eleven are committed as playable seven-act stories**. Chapters Twelve–Eighteen remain mapped but not yet released.
+The **novel contains 18 numbered chapters**, and **Chapters One through Twelve are committed as playable seven-act stories**. Chapters Thirteen–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -305,3 +307,35 @@ LENINA + JOHN --> SHARED FEELY --------> DIFFERENT INNER REACTIONS
 ```
 
 **Release ledger:** 11 playable book chapters × 7 acts = **77 original story acts**; 11 crosswalks; 7 chapters mapped but not yet playable. Canonical registry: **25 Git blob-identified source artifacts**. CI dynamically validates story payloads, relative links, source hashes, all page JavaScript, and attempts GitHub Pages deployment. There is **no film-review track**. B012 naturally tests the instability of Bernard's borrowed social status when John refuses to perform for the audience.
+
+
+---
+
+## B012 — The Refused Party · Twelfth living boundary (2026-11-11)
+
+**[Play the seven-act B012 story](episodes/B012-the-refused-party.html)** · **[Witness Crosswalk 012](witness-crosswalk-012.html)**
+
+Bernard plans a fashionable party and invites London's elite by promising John as a guest. John refuses to leave his room. Those who expected a spectacle become angry with Bernard, whose new standing collapses because it depended on John's public appeal. Lenina is hurt by John's absence, but her disappointment alone does not determine all of his motives. Bernard returns to his old insecurity and seeks sympathy.
+
+Helmholtz, meanwhile, has been disciplined for writing a poem about solitude, a subject the State regards as socially dangerous. John and Helmholtz begin a voluntary friendship around expressive language and Shakespeare. Helmholtz admires Shakespeare's literary power but sometimes laughs at marriage, families, and romantic assumptions he has been conditioned to find absurd. Their different reactions remain real without destroying the connection.
+
+Seven original Canvas2D sprite scenes illustrate the invited guests, John's closed door, Bernard's failed party, Lenina's disappointment, Helmholtz's poem, a shared Shakespeare volume, and the three outsiders in conversation. The story uses original interpretive language rather than novel quotations or a film-review track.
+
+```text
+BERNARD --------> GUESTS EXPECT JOHN ------> SOCIAL APPROVAL
+JOHN -----------> REFUSAL ---------------> CONSENT BOUNDARY
+GUESTS ---------> ANGER / DEPARTURE -----> FAME COLLAPSE
+LENINA ---------> DISAPPOINTMENT --------> UNKNOWN FULL MOTIVE
+HELMHOLTZ -----> POEM / CENSURE --------> VOLUNTARY ART
+JOHN + HELM ----> SHAKESPEARE ----------- > CHOSEN FRIENDSHIP
+                              |
+                           {{ ROOTS }}
+                              |
+           PUBLIC_APPROVAL != LASTING_FRIENDSHIP
+           GUEST_EXPECTATION != JOHN_CONSENT
+           OFFICIAL_DISCIPLINE != ARTISTIC_REFUTATION
+                              |
+                          [ PRESERVE ]
+```
+
+**Release ledger:** 12 playable book chapters × 7 original acts = **84 authored story acts**, 12 witness crosswalks, 6 chapters mapped but not yet playable. Canonical registry contains **27 Git blob-identified core source assets**. Dynamic GitHub Actions checks source hashes, 7-act payloads, local navigation, and JavaScript syntax before Pages deployment. The next natural chapter B013 examines John and Lenina's increasingly conflicting expectations in a direct encounter.
