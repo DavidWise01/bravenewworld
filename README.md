@@ -4,6 +4,12 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B010 — The Director's Confrontation](episodes/B010-the-directors-confrontation.html)** — seven original Canvas scenes from the public Iceland accusation to the arrival of Linda and John and the Director's exit.
+- [Witness Crosswalk 010](witness-crosswalk-010.html) — the Director's official memory, Linda's firsthand years, John's lived identity, and a crowd that observes without independently verifying.
+- **[PLAY B009 — The Sleeping Visitor](episodes/B009-the-sleeping-visitor.html)** — seven acts: Lenina's soma sleep, Bernard's Mond-approved travel order, and John's unauthorized entry and restraint.
+- [Witness Crosswalk 009](witness-crosswalk-009.html) — approval, privacy, desire, restraint and an uncompleted journey.
+- **[PLAY B008 — John's Story](episodes/B008-johns-story.html)** — seven acts tracing John, Linda's London stories, reading, Shakespeare, exclusion and the invitation.
+- [Witness Crosswalk 008](witness-crosswalk-008.html) — secondhand report versus lived experience.
 - **[PLAY B007 — The Reservation](episodes/B007-the-reservation.html)** — original seven-act Malpais story: aged residents, caregiving, absence of soma, a non-graphic ceremony, John and Linda's testimony, and Bernard's emerging connection to the Director.
 - [Witness Crosswalk 007](witness-crosswalk-007.html) — visitor judgments, John and Linda's firsthand experiences, and the Director's recollection kept distinct.
 - **[PLAY B006 — The Reservation Journey](episodes/B006-the-reservation-journey.html)** — seven original Canvas acts from the dark English Channel to Santa Fe, the Director's lost companion, a threatened Iceland transfer, and Bernard's changing response.
@@ -22,7 +28,7 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, and **Chapters One through Seven are committed as playable seven-act stories**. Chapters Eight–Eighteen remain mapped but not yet released.
+The **novel contains 18 numbered chapters**, and **Chapters One through Ten are committed as playable seven-act stories**. Chapters Eleven–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -239,3 +245,33 @@ MALPAIS (OBSERVED COMMUNITY)
 ```
 
 **Release ledger:** seven playable book chapters × seven acts = **49 authored story acts**, seven witness crosswalks, eleven remaining chapters mapped but not yet playable. The canonical registry lists seventeen source assets with Git blob identities; automated CI checks source syntax, links, source consistency, and attempts GitHub Pages deployment. **Next B008 — John's upbringing**, where his personal history and Shakespearean reading enter the evidence record.
+
+
+---
+
+## B008—B010: Chapters recovered and the public confrontation · 2026-11-11
+
+The releases B008 and B009 were committed but their canonical source registry and CI were not yet updated. This release closes that gap **without altering either chapter's source files**. The registry now lists ten authored seven-act book chapters and ten source-separated witness crosswalks, with Git blob hashes for twenty-three core artifacts. CI dynamically tests every registered story's seven-act payload, narrative links, canonical source bytes, JavaScript syntax and Pages deployment.
+
+**[B010 — The Director's Confrontation](episodes/B010-the-directors-confrontation.html)** · **[Witness Crosswalk 010](witness-crosswalk-010.html)**
+
+At the London Hatchery, the Director assembles a public audience in the Fertilizing Room to announce Bernard's transfer to Iceland. Bernard brings in Linda, who directly recognizes the official from her years-old Reservation history, and John, who openly identifies him as his father. The room's mockery becomes a public reversal of authority, and the Director flees. The chapter ends at his observed exit; any later institutional resignation is a separate subsequent narrative event. Original Canvas2D scenes show the production hall, audience, announcement, Bernard's response, Linda's entrance, John's declaration and the Director's departure. Original dialogue and sprite art do not reproduce passages from the novel.
+
+```text
+THE DIRECTOR: OFFICIAL AUTHORITY + PARTIAL OLD MEMORY
+LINDA:        DIRECT RESERVATION HISTORY
+JOHN:         LIVED EXPERIENCE + FILIAL DECLARATION
+AUDIENCE:     WITNESSED PUBLIC STATEMENTS + LAUGHTER
+                           |
+                       {{ ROOTS }}
+                           |
+      PUBLIC_AUTHORITY != COMPLETE_PRIVATE_HISTORY
+      CROWD_REACTION != EVIDENCE_OF_TRUTH
+      ANNOUNCED_TRANSFER != EXECUTED_TRANSFER
+                           |
+                       [ PRESERVE ]
+```
+
+**Release total:** 10 of 18 chapters authored, 70 playable story acts, 10 witness crosswalks, 8 chapters mapped but not yet authored. No movie-review track. The real Git commit and GitHub Actions outcome govern source and deployment status; an in-chat sprite preview is an independently authored illustration and not a screenshot of the public site.
+
+**Next natural chapter B011 — London's New Curiosity:** the Director's departure, Bernard's changing popularity, and John as an object of public fascination. Preserve `PUBLIC_INTEREST != HUMAN_UNDERSTANDING`.
