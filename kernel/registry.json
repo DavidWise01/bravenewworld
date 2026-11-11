@@ -1,13 +1,13 @@
 {
   "schema": "bnw.living-registry.v1",
   "repository": "DavidWise01/bravenewworld",
-  "release": "B002-full-story",
+  "release": "B003-full-story",
   "last_checked": "2026-11-10",
   "canon": {
     "chapters": 18,
-    "playable_book_chapters": 2,
+    "playable_book_chapters": 3,
     "film_labs": 0,
-    "witness_crosswalks": 2
+    "witness_crosswalks": 3
   },
   "chapter_map": [
     "The Hatchery",
@@ -41,19 +41,24 @@
       "bytes": 14884
     },
     {
+      "path": "episodes/B003-the-world-state.html",
+      "git_blob_sha": "5fba5299fdcee06b42d5966b4073aca8c46586cc",
+      "bytes": 15388
+    },
+    {
       "path": "engine/story-engine.js",
-      "git_blob_sha": "955d6c44bbdc766ec704fe5672056475757aa0d2",
-      "bytes": 10665
+      "git_blob_sha": "1c7b8094e06f68eeb061103bb3a4d9de36af56d0",
+      "bytes": 13261
     },
     {
       "path": "index.html",
-      "git_blob_sha": "ef79519b64647baa129a503df2aafe80f8dac0e1",
-      "bytes": 7491
+      "git_blob_sha": "58c275e271dccc1a02130299e413b65b2cbff152",
+      "bytes": 8403
     },
     {
       "path": "chapter-atlas.html",
-      "git_blob_sha": "bcbeb2c272a3aa6df4bb32d580be37ad1182c9d2",
-      "bytes": 3881
+      "git_blob_sha": "6a024b3771b3f6def4da8f98d8780c6b72552152",
+      "bytes": 3981
     },
     {
       "path": "witness-crosswalk-001.html",
@@ -64,6 +69,11 @@
       "path": "witness-crosswalk-002.html",
       "git_blob_sha": "5350b824a11f426149fc43644fa2bb104fe03846",
       "bytes": 5157
+    },
+    {
+      "path": "witness-crosswalk-003.html",
+      "git_blob_sha": "93ade46fe5ad141b1e7e1ceaca2d5ca1978d7ef7",
+      "bytes": 5216
     }
   ],
   "invariants": [
@@ -73,7 +83,10 @@
     "GITHUB_SOURCE != INDEPENDENT_PAGES_MIRROR",
     "CONDITIONED_RESPONSE != FREE_CHOICE",
     "REPEATED_MESSAGE != INDEPENDENT_BELIEF",
-    "ONE_INSTALLED_LESSON != MULTIPLE_INDEPENDENT_WITNESSES"
+    "ONE_INSTALLED_LESSON != MULTIPLE_INDEPENDENT_WITNESSES",
+    "SOCIAL_CONSENSUS != INDEPENDENT_TRUTH",
+    "INSTITUTIONAL_STATUS != PROOF",
+    "REPEATED_SLOGAN != NEW_WITNESS_ROOT"
   ],
   "provenance": "One GitHub source ancestry; published Pages is a mirror, not an independent witness; original art and interpretation, no novel passages reproduced."
 }
