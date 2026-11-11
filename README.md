@@ -4,6 +4,8 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B006 — The Reservation Journey](episodes/B006-the-reservation-journey.html)** — seven original Canvas acts from the dark English Channel to Santa Fe, the Director's lost companion, a threatened Iceland transfer, and Bernard's changing response.
+- [Witness Crosswalk 006](witness-crosswalk-006.html) — distinct origins for remembered events, threatened consequences, and actual decisions.
 - **[PLAY B005 — The Solidarity Ritual](episodes/B005-the-solidarity-ritual.html)** — seven animated original acts: Lenina and Henry's evening, crematorium phosphorus recovery, cabaret, soma, and Bernard's twelve-person Solidarity Service.
 - [Witness Crosswalk 005](witness-crosswalk-005.html) — publicly synchronized ritual versus private belonging.
 - **[PLAY B004 — Bernard and Helmholtz](episodes/B004-bernard-and-helmholtz.html)** — seven animated original narrative acts: Lenina's public invitation, the city flight, Benito's soma offer, Bernard's contradiction, Helmholtz's success and his desire to write something meaningful.
@@ -18,7 +20,7 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, and **Chapters One through Five are committed as playable seven-act stories**. Chapters Six–Eighteen remain mapped but not yet released.
+The **novel contains 18 numbered chapters**, and **Chapters One through Six are committed as playable seven-act stories**. Chapters Seven–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -178,3 +180,31 @@ BERNARD        -> SOLIDARITY RITUAL -> OUTWARD PARTICIPATION
 ```
 
 **Release ledger:** five playable book chapters × seven acts = **35 authored story acts**; five witness crosswalks; thirteen chapters still mapped but not yet playable. The canonical Git registry records thirteen source assets with Git blob identities, and GitHub Actions validates source integrity and JavaScript syntax. **Next B006 — Bernard and Lenina, the Director's threat, and the trip toward the Reservation.**
+
+
+---
+
+## B006 — The Reservation Journey · Sixth living boundary (2026-11-11)
+
+**[Play B006](episodes/B006-the-reservation-journey.html)** · **[Witness Crosswalk 006](witness-crosswalk-006.html)**
+
+Seven original playable Canvas2D scenes tell Chapter Six: Bernard tries to experience independence with Lenina over the English Channel; a later conversation exposes their conflicting expectations; the Director recalls a woman lost during a storm on an earlier Reservation trip; he threatens Bernard with exile to Iceland. Bernard enjoys the role of dissenter until Helmholtz reports that the transfer is actually planned. After meeting the Warden near Santa Fe and worrying about his running scent tap, Bernard becomes frightened and takes soma before entering the Reservation. The residents' firsthand perspective remains a future evidence boundary.
+
+The new original Canvas2D sprite sets portray the dark Channel, the Director's office, the travel permit, the Iceland warning, Santa Fe and the coming New Mexico journey. The chapter does not reproduce protected text, dialogue, or an existing screen adaptation.
+
+```text
+BERNARD --DECLARED INDEPENDENCE--> CHANNEL SILENCE
+DIRECTOR --RECALLS---------------> LOST COMPANION / FATE UNKNOWN
+DIRECTOR --THREATENS-------------> ICELAND TRANSFER
+HELMHOLTZ --REPORTS-------------> CREDIBLE PLAN
+BERNARD --REACTS----------------> FEAR / SOMA
+                   |
+              {{ WITNESS }}
+                   |
+       IMAGINED_COURAGE != TESTED_COURAGE
+       REPORTED_INTENTION != EXECUTED_TRANSFER
+                   |
+                [ PRESERVE ]
+```
+
+**Release ledger:** six playable book chapters × seven acts = **42 authored interactive acts**; six witness crosswalks; twelve remaining chapters mapped but not yet playable. Fifteen source assets in the canonical registry with Git blob hashes. **Next B007 — The Reservation**, with first-person perspectives preserved rather than accepting only the Warden's descriptions.
