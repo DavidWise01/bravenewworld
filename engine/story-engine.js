@@ -160,7 +160,23 @@ if(mode===5){banner('JOHN: MY FATHER');director(241,102);linda(76,112);john(150,
 if(mode===6){banner('THE DIRECTOR EXITS');bern(88,111);john(151,111);linda(115,112);director(289,115);rect(266,58,43,49,'#17263b');outline(266,58,43,49,'#ddc2a1');type('EXIT',275,74,'#ffbda9',8)}
 rect(0,0,320,15,'#081329');type('FERTILIZING ROOM / BNW · '+data.id,5,10,'#99eee4',7);
 }
-function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B010')directorConfrontation(t,s.mode);else if(data.id==='B009')sleepingVisitor(t,s.mode);else if(data.id==='B008')johnsStory(t,s.mode);else if(data.id==='B007')malpais(t,s.mode);else if(data.id==='B006')reservationJourney(t,s.mode);else if(data.id==='B005')solidarity(t,s.mode);else if(data.id==='B004')bernardHelmholtz(t,s.mode);else if(data.id==='B003')worldState(t,s.mode);else if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
+function londonCuriosity(t,mode){
+rect(0,0,W,H,'#111e3b');for(let j=0;j<8;j++){rect(j*43,17,3,120,'#344e72');rect(j*43+7,23,28,6,'#597ea1')}rect(0,136,320,24,'#243b57');
+const john=(x,y)=>{scientist(x,y,'#d2beae',t);rect(x-8,y-25,16,6,'#aa876e')};
+const bern=(x,y)=>{scientist(x,y,'#5774a7',t);rect(x-8,y-25,16,6,'#292c48')};
+const len=(x,y)=>{scientist(x,y,'#d0a4cc',t);rect(x-8,y-25,16,7,'#dbb884')};
+const linda=(x,y)=>{scientist(x,y,'#b1a1a9',t);rect(x-8,y-24,16,8,'#baa99c')};
+const banner=(s)=>{rect(36,27,248,20,'#1b334e');outline(36,27,248,20,'#a3d5d5');type(s,43,40,'#ffe0b5',8)};
+if(mode===0){banner('THE SAVAGE / LONDON CURIOSITY');john(159,112);bern(238,119);for(let j=0;j<5;j++)scientist(30+j*55,123,['#d9b98e','#b3a5d3','#83b1af'][j%3],t);for(let j=0;j<5;j++)rect(35+j*56,66+Math.sin((t+j*9)/15)*3,16,5,'#efc88e')}
+if(mode===1){rect(24,29,272,95,'#354768');rect(44,58,233,57,'#715578');rect(62,66,195,43,'#b695bc');linda(153,78);john(55,121);banner('LINDA / SOMA HOLIDAY');type('COMFORT != WELFARE',102,129,'#ffe0aa',8)}
+if(mode===2){banner('BERNARD / BORROWED POPULARITY');bern(162,109);for(let j=0;j<4;j++){scientist(27+j*88%300,123,['#d5b17c','#b3a2ce','#8dbcb5'][j%3],t)}rect(114,66,98,22,'#be8f71');type('FAME',147,81,'#1b2c44',10)}
+if(mode===3){banner('FACTORY / REPEATING ROWS');for(let j=0;j<7;j++){let x=10+j*45;rect(x,56,36,60,'#47748b');rect(x+6,65,24,41,'#214e74');scientist(x+18,119,'#b1af96',t)}john(170,104);type('EFFICIENCY != FULFILLMENT',83,129,'#ffdfa8',7)}
+if(mode===4){rect(17,29,284,104,'#394b70');banner('ETON / SELECTED EDUCATION');for(let j=0;j<4;j++){rect(28+j*71,59,54,56,'#254065');rect(33+j*71,65,44,37,'#9d8eb7');type(['FILM','LESSON','RULES','REF.'][j],38+j*71,79,'#ffe6bd',8)}john(159,115);type('NO SHAKESPEARE',117,123,'#a3ebdf',8)}
+if(mode===5){rect(12,27,296,106,'#47385d');banner('THE FEELIES / SENSORY CINEMA');for(let j=0;j<6;j++){rect(23+j*50,55,36,52,['#685ea1','#479eab','#b57d89'][j%3]);rect(29+j*50,62,24,35,'#1a3153')}for(let j=0;j<8;j++)rect(29+j*39,104+Math.sin(t/14+j)*3,22,4,'#e6b785');john(100,119);len(216,119)}
+if(mode===6){rect(11,30,143,93,'#273c62');rect(166,30,143,93,'#4a3c63');outline(11,30,143,93,'#9ad4de');outline(166,30,143,93,'#deb1d9');len(92,104);john(234,104);type('LENINA',62,51,'#ffdfaa',8);type('JOHN',214,51,'#ffdfaa',8);type('DIFFERENT EXPECTATIONS',85,128,'#a3eee1',8)}
+rect(0,0,320,15,'#08142a');type('LONDON / BNW · '+data.id,6,10,'#95ebe3',8);
+}
+function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B011')londonCuriosity(t,s.mode);else if(data.id==='B010')directorConfrontation(t,s.mode);else if(data.id==='B009')sleepingVisitor(t,s.mode);else if(data.id==='B008')johnsStory(t,s.mode);else if(data.id==='B007')malpais(t,s.mode);else if(data.id==='B006')reservationJourney(t,s.mode);else if(data.id==='B005')solidarity(t,s.mode);else if(data.id==='B004')bernardHelmholtz(t,s.mode);else if(data.id==='B003')worldState(t,s.mode);else if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
 if(data.id==='B001'&&s.mode===2){for(let j=0;j<24;j++){const x=16+(j%8)*36,y=32+Math.floor(j/8)*9;rect(x,y,2,2,j%3?'#9ce4ff':'#f7c876')}}
 if(data.id==='B001'&&s.mode===3){for(let j=0;j<5;j++)rect(28+j*59,132,19,2,['#ed7182','#f4a757','#e8dc6a','#5dd5a7','#77b9ff'][j])}
 if(data.id==='B001'&&s.mode===6){const glow=Math.floor(4+Math.sin(t/30)*4);outline(114-glow/2,40-glow/2,96+glow,70+glow,'#cbb5f4')}
