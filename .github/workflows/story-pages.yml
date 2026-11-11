@@ -1,4 +1,4 @@
-name: BNW Story Build, Verify & Publish
+name: BNW Living Story Integrity and Pages
 on:
   push:
     branches: [main]
@@ -15,54 +15,67 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check required B001 story assets and navigation
+      - name: Verify all chapters, witness roots, Git blobs and links
         shell: bash
         run: |
           set -euo pipefail
-          for p in README.md index.html chapter-atlas.html living-kernel.html engine/story-engine.js episodes/B001-the-hatchery.html witness-crosswalk-001.html episodes/B002-the-conditioning-rooms.html witness-crosswalk-002.html episodes/B003-the-world-state.html witness-crosswalk-003.html episodes/B004-bernard-and-helmholtz.html witness-crosswalk-004.html episodes/B005-the-solidarity-ritual.html witness-crosswalk-005.html episodes/B006-the-reservation-journey.html witness-crosswalk-006.html episodes/B007-the-reservation.html witness-crosswalk-007.html kernel/registry.json; do
-            test -s "$p"
-            echo "PASS $p"
-          done
           python3 - <<'PY'
           from pathlib import Path
           from html.parser import HTMLParser
-          import json, re
-          root=Path(".")
-          reg=json.loads(Path("kernel/registry.json").read_text())
-          assert reg["schema"]=="bnw.living-registry.v1"
-          assert reg["canon"]["playable_book_chapters"]==7
-          assert reg["canon"]["witness_crosswalks"]==7
-          assert len(reg["chapter_map"])==18
-          for chapter in ("B001-the-hatchery","B002-the-conditioning-rooms","B003-the-world-state","B004-bernard-and-helmholtz","B005-the-solidarity-ritual","B006-the-reservation-journey","B007-the-reservation"):
-            c=Path("episodes/"+chapter+".html").read_text()
-            found=re.search(r'window\.BNW_CHAPTER=(\{.*?\});</script>',c,re.S)
-            assert found, f"{chapter} missing story dataset"
-            data=json.loads(found.group(1))
-            assert data["id"]==chapter[:4] and len(data["scenes"])==7
-            assert all(all(k in scene for k in ("title","narration","dialogue","evidence","fact","inference","answers","responses","mode")) for scene in data["scenes"])
-            assert all(len(scene["answers"])==len(scene["responses"])==2 for scene in data["scenes"])
-          import hashlib
-          for a in reg["assets"]:
-            p=root/a["path"]
-            assert p.is_file(),a["path"]
+          from urllib.parse import urlsplit, unquote
+          import hashlib, json, re
+          root=Path('.').resolve()
+          reg=json.loads(Path('kernel/registry.json').read_text(encoding='utf-8'))
+          assert reg['schema']=='bnw.living-registry.v1'
+          total=reg['canon']['playable_book_chapters']
+          assert total==reg['canon']['witness_crosswalks']
+          assert 1<=total<=18 and len(reg['chapter_map'])==18
+          slugs=[
+            'the-hatchery','the-conditioning-rooms','the-world-state',
+            'bernard-and-helmholtz','the-solidarity-ritual',
+            'the-reservation-journey','the-reservation','johns-story',
+            'the-sleeping-visitor','the-directors-confrontation'
+          ]
+          assert total<=len(slugs), 'Add new chapter slug to audit table'
+          expected={f'episodes/B{i:03d}-{slugs[i-1]}.html' for i in range(1,total+1)}
+          expected|={f'witness-crosswalk-{i:03d}.html' for i in range(1,total+1)}
+          expected|={'engine/story-engine.js','index.html','chapter-atlas.html'}
+          paths={a['path'] for a in reg['assets']}
+          assert paths==expected,(sorted(expected-paths),sorted(paths-expected))
+          for a in reg['assets']:
+            p=Path(a['path'])
+            assert p.is_file(),f'Missing {p}'
             raw=p.read_bytes()
-            sha=hashlib.sha1(b"blob "+str(len(raw)).encode()+b"\0"+raw).hexdigest()
-            assert sha==a["git_blob_sha"],(p,sha,a["git_blob_sha"])
+            actual=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
+            assert actual==a['git_blob_sha'],f'Git blob mismatch {p}'
+          for i in range(1,total+1):
+            p=Path(f'episodes/B{i:03d}-{slugs[i-1]}.html')
+            content=p.read_text(encoding='utf-8')
+            m=re.search(r'window\.BNW_CHAPTER=(\{.*?\});</script>',content,re.S)
+            assert m,f'Missing story payload: {p}'
+            data=json.loads(m.group(1))
+            assert data['id']==f'B{i:03d}'
+            assert len(data['scenes'])==7,f'Expected 7 acts: {p}'
+            for s in data['scenes']:
+              assert all(k in s for k in ('title','short','narration','dialogue','evidence','fact','inference','answers','responses','mode')),p
+              assert len(s['answers'])==len(s['responses'])==2,p
           class Links(HTMLParser):
             def __init__(self): super().__init__();self.links=[]
             def handle_starttag(self,tag,attrs):
-              if tag in ("a","script","link"):
-                self.links += [v for k,v in attrs if k in ("href","src") and v and not v.startswith(("http:","https:","#","mailto:"))]
-          files=["index.html","chapter-atlas.html","living-kernel.html","episodes/B001-the-hatchery.html","episodes/B002-the-conditioning-rooms.html","episodes/B003-the-world-state.html","episodes/B004-bernard-and-helmholtz.html","episodes/B005-the-solidarity-ritual.html","episodes/B006-the-reservation-journey.html","episodes/B007-the-reservation.html","witness-crosswalk-001.html","witness-crosswalk-002.html","witness-crosswalk-003.html","witness-crosswalk-004.html","witness-crosswalk-005.html","witness-crosswalk-006.html","witness-crosswalk-007.html"]
-          for name in files:
-            q=root/name
-            parser=Links();parser.feed(q.read_text())
-            for l in parser.links:
-              target=q.parent/l.split("?")[0].split("#")[0]
-              if l and not target.exists(): raise AssertionError(f"Broken link: {name} -> {l}")
-          print("PASS: 49 original story acts; 18 mapped; 17 Git blob IDs; local links")
+              if tag in ('a','script','link','img'):
+                self.links.extend(v for k,v in attrs if k in ('href','src') and v)
+          for path in ['index.html','chapter-atlas.html','living-kernel.html']+[f'episodes/B{i:03d}-{slugs[i-1]}.html' for i in range(1,total+1)]+[f'witness-crosswalk-{i:03d}.html' for i in range(1,total+1)]:
+            doc=Path(path)
+            parser=Links();parser.feed(doc.read_text(encoding='utf-8'))
+            for ref in parser.links:
+              url=urlsplit(ref)
+              if url.scheme or url.netloc or ref.startswith(('#','/','mailto:')) or not url.path: continue
+              target=(doc.parent/unquote(url.path)).resolve()
+              assert target.is_relative_to(root),f'Path traversal: {path} -> {ref}'
+              assert target.exists(),f'Broken local link: {path} -> {ref}'
+          print(f'PASS {total} playable chapters, {7*total} acts, {total} crosswalks, {len(paths)} canonical Git blob hashes and local links.')
           PY
-      - name: Verify all browser JavaScript syntax
+      - name: Check browser JavaScript syntax
         shell: bash
         run: |
           set -euo pipefail
@@ -70,16 +83,18 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import re
-          Path('/tmp/bnw-inline').mkdir(exist_ok=True)
-          files=["index.html","living-kernel.html","episodes/B001-the-hatchery.html","episodes/B002-the-conditioning-rooms.html","episodes/B003-the-world-state.html","episodes/B004-bernard-and-helmholtz.html","episodes/B005-the-solidarity-ritual.html","episodes/B006-the-reservation-journey.html","episodes/B007-the-reservation.html","witness-crosswalk-001.html","witness-crosswalk-002.html","witness-crosswalk-003.html","witness-crosswalk-004.html","witness-crosswalk-005.html","witness-crosswalk-006.html","witness-crosswalk-007.html"]
+          out=Path('/tmp/bnw-inline')
+          out.mkdir(exist_ok=True)
+          paths=[Path('index.html'),Path('living-kernel.html')]
+          paths+=list(Path('episodes').glob('B*.html'))
+          paths+=list(Path('.').glob('witness-crosswalk-*.html'))
           n=0
-          for fname in files:
-            content=Path(fname).read_text(encoding="utf-8")
-            for raw in re.findall(r"<script(?:\s[^>]*)?>([\s\S]*?)</script>", content,flags=re.I):
-              if raw.strip():
-                Path(f"/tmp/bnw-inline/{n}.js").write_text(raw,encoding="utf-8")
-                n+=1
-          print(f"Created {n} inline JS syntax targets")
+          for path in paths:
+            for script in re.findall(r'<script(?:\s[^>]*)?>([\s\S]*?)</script>',path.read_text(encoding='utf-8'),flags=re.I):
+              if not script.strip():continue
+              (out/f'{n:03d}.js').write_text(script,encoding='utf-8')
+              n+=1
+          print(f'Generated {n} inline script checks')
           PY
           for f in /tmp/bnw-inline/*.js; do node --check "$f"; done
       - uses: actions/upload-pages-artifact@v3
@@ -92,6 +107,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy static BNW story to GitHub Pages
+      - name: Deploy story archive to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
