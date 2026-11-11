@@ -4,6 +4,8 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B005 — The Solidarity Ritual](episodes/B005-the-solidarity-ritual.html)** — seven animated original acts: Lenina and Henry's evening, crematorium phosphorus recovery, cabaret, soma, and Bernard's twelve-person Solidarity Service.
+- [Witness Crosswalk 005](witness-crosswalk-005.html) — publicly synchronized ritual versus private belonging.
 - **[PLAY B004 — Bernard and Helmholtz](episodes/B004-bernard-and-helmholtz.html)** — seven animated original narrative acts: Lenina's public invitation, the city flight, Benito's soma offer, Bernard's contradiction, Helmholtz's success and his desire to write something meaningful.
 - [Witness Crosswalk 004](witness-crosswalk-004.html) — social exclusion and unused creative capacity are two distinct roots of alienation.
 - **[PLAY B003 — The World State](episodes/B003-the-world-state.html)** — seven intercut story acts with Mustapha Mond, Lenina and Fanny, Bernard Marx, official history, peer pressure and social consensus.
@@ -16,7 +18,7 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, and **Chapters One through Four are committed as playable seven-act stories**. Chapters Five–Eighteen remain mapped but not yet released.
+The **novel contains 18 numbered chapters**, and **Chapters One through Five are committed as playable seven-act stories**. Chapters Six–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -151,3 +153,28 @@ HELMHOLTZ:  SUCCESS / UNUSED TALENT -> DISCOMFORT
 ```
 
 **Release ledger:** 4 completed playable book stories × 7 acts = 28 authored story acts; 4 witness crosswalks; 14 remaining chapters mapped. Git source history is persistent; GitHub Pages deployment is a separate verification boundary. **Next B005 — A Solidarity Ritual (Chapter Five)**, with original age-appropriate non-explicit symbolic art and an account of Bernard's isolation.
+
+
+---
+
+## B005 — The Solidarity Ritual · Fifth living boundary (2026-11-11)
+
+**[Play B005](episodes/B005-the-solidarity-ritual.html)** · **[Witness Crosswalk 005](witness-crosswalk-005.html)**
+
+The fifth chapter is authored in seven playable Canvas2D acts. In the first half, Lenina and Henry return from Obstacle Golf over the Slough Crematorium, where phosphorus is recovered; they attend the Westminster Abbey Cabaret and use soma. In the second, Bernard goes to the Fordson Community Singery and joins a twelve-person Solidarity Service. The ceremony includes soma and a collective celebration, interpreted through non-explicit original pixel art. Unlike others, Bernard finishes more alienated than he began. This is original prose commentary, not reproduced novel text or a film review.
+
+```text
+LENINA + HENRY -> ORDERED LEISURE -> SCHEDULED PLEASURE
+BERNARD        -> SOLIDARITY RITUAL -> OUTWARD PARTICIPATION
+                                              |
+                                      INWARD ALIENATION
+                                              |
+                                         {{ WITNESS }}
+                                              |
+                    COLLECTIVE_PARTICIPATION != INNER_BELONGING
+                    SYNCHRONIZED_ACTION != SHARED_CONVICTION
+                                              |
+                                          [ PRESERVE ]
+```
+
+**Release ledger:** five playable book chapters × seven acts = **35 authored story acts**; five witness crosswalks; thirteen chapters still mapped but not yet playable. The canonical Git registry records thirteen source assets with Git blob identities, and GitHub Actions validates source integrity and JavaScript syntax. **Next B006 — Bernard and Lenina, the Director's threat, and the trip toward the Reservation.**
