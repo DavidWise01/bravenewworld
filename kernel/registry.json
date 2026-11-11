@@ -1,13 +1,13 @@
 {
   "schema": "bnw.living-registry.v1",
   "repository": "DavidWise01/bravenewworld",
-  "release": "B012-full-story",
+  "release": "B013-full-story",
   "last_checked": "2026-11-10",
   "canon": {
     "chapters": 18,
-    "playable_book_chapters": 12,
+    "playable_book_chapters": 13,
     "film_labs": 0,
-    "witness_crosswalks": 12
+    "witness_crosswalks": 13
   },
   "chapter_map": [
     "The Hatchery",
@@ -91,19 +91,24 @@
       "bytes": 15075
     },
     {
+      "path": "episodes/B013-the-unwelcome-confession.html",
+      "git_blob_sha": "d89f676776ebdeaa5405385fddc8b7bffff19c4c",
+      "bytes": 14946
+    },
+    {
       "path": "engine/story-engine.js",
-      "git_blob_sha": "e135da99e2e9dd818cf153b02e918ae8e278790f",
-      "bytes": 35202
+      "git_blob_sha": "82091c1bb4134224dea4c2155aa8b55425aa6269",
+      "bytes": 37245
     },
     {
       "path": "index.html",
-      "git_blob_sha": "791e121cb02094e2e4bcc9c79f40c70381bb90e1",
-      "bytes": 17815
+      "git_blob_sha": "a7dfa8e4d242f6f128d522a30c022b7222dc55f5",
+      "bytes": 18873
     },
     {
       "path": "chapter-atlas.html",
-      "git_blob_sha": "0abf81b5439736f0f8e223efc6f04133f5ea2df1",
-      "bytes": 4943
+      "git_blob_sha": "a3c686186d1788dc85eeed09d224744355f3bed2",
+      "bytes": 4945
     },
     {
       "path": "witness-crosswalk-001.html",
@@ -163,7 +168,12 @@
     {
       "path": "witness-crosswalk-012.html",
       "git_blob_sha": "ca28e68016622726a0196916e61d75ab0906efc1",
-      "bytes": 5092
+      "bytes": 5093
+    },
+    {
+      "path": "witness-crosswalk-013.html",
+      "git_blob_sha": "486acd7b378c571ff7c602919f683afc0db870f3",
+      "bytes": 3798
     }
   ],
   "invariants": [
@@ -198,7 +208,10 @@
     "SHARED_STIMULUS != SHARED_INTERPRETATION",
     "PUBLIC_APPROVAL != LASTING_FRIENDSHIP",
     "GUEST_EXPECTATION != JOHN_CONSENT",
-    "OFFICIAL_DISCIPLINE != ARTISTIC_REFUTATION"
+    "OFFICIAL_DISCIPLINE != ARTISTIC_REFUTATION",
+    "ATTRACTION != CONSENT",
+    "CULTURAL_MISUNDERSTANDING != EXCUSE_FOR_HARM",
+    "EMERGENCY_INTERRUPTION != RESOLUTION"
   ],
   "provenance": "One GitHub source ancestry; published Pages is a mirror, not an independent witness; original art and interpretation, no novel passages reproduced."
 }
