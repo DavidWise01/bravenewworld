@@ -1,13 +1,13 @@
 {
   "schema": "bnw.living-registry.v1",
   "repository": "DavidWise01/bravenewworld",
-  "release": "B007-full-story",
+  "release": "B010-full-story",
   "last_checked": "2026-11-10",
   "canon": {
     "chapters": 18,
-    "playable_book_chapters": 7,
+    "playable_book_chapters": 10,
     "film_labs": 0,
-    "witness_crosswalks": 7
+    "witness_crosswalks": 10
   },
   "chapter_map": [
     "The Hatchery",
@@ -33,87 +33,117 @@
     {
       "path": "episodes/B001-the-hatchery.html",
       "git_blob_sha": "562042f458c691bc651b1f31706be4c7da1d6b60",
-      "bytes": 15531
+      "bytes": 15581
     },
     {
       "path": "episodes/B002-the-conditioning-rooms.html",
       "git_blob_sha": "f9d2d6214b9b948150efc2ec2128c346b033551f",
-      "bytes": 14884
+      "bytes": 14936
     },
     {
       "path": "episodes/B003-the-world-state.html",
       "git_blob_sha": "5fba5299fdcee06b42d5966b4073aca8c46586cc",
-      "bytes": 15388
+      "bytes": 15438
     },
     {
       "path": "episodes/B004-bernard-and-helmholtz.html",
       "git_blob_sha": "d3112b8958bb5c34fab2ae9ab92ff5306824bbf8",
-      "bytes": 16093
+      "bytes": 16143
     },
     {
       "path": "episodes/B005-the-solidarity-ritual.html",
       "git_blob_sha": "08e24c46968f274665a2285145da47770fc0e6fe",
-      "bytes": 15518
+      "bytes": 15568
     },
     {
       "path": "episodes/B006-the-reservation-journey.html",
       "git_blob_sha": "7cdf3dfc4ac9a7d59066be1d4830867b665edb2c",
-      "bytes": 15359
+      "bytes": 15411
     },
     {
       "path": "episodes/B007-the-reservation.html",
       "git_blob_sha": "a688d6fbc9d06cc26093e32fc73da40dc4e35d86",
-      "bytes": 15988
+      "bytes": 16044
+    },
+    {
+      "path": "episodes/B008-johns-story.html",
+      "git_blob_sha": "cd6c8e702c3c5318cd62e13f30be426917afdf11",
+      "bytes": 15537
+    },
+    {
+      "path": "episodes/B009-the-sleeping-visitor.html",
+      "git_blob_sha": "3e4f4ae7623992653c990159e30cb9ed32beaf62",
+      "bytes": 15215
+    },
+    {
+      "path": "episodes/B010-the-directors-confrontation.html",
+      "git_blob_sha": "1d5a74f72a2acc40cc2c9f93e843721dca7f01f3",
+      "bytes": 15601
     },
     {
       "path": "engine/story-engine.js",
-      "git_blob_sha": "eee3c3ff4d80d69b6b4dc7482976d7a56e5b7294",
-      "bytes": 23469
+      "git_blob_sha": "bbf71c9c2f4db6051bb9b125fdb96b7e40658282",
+      "bytes": 30612
     },
     {
       "path": "index.html",
-      "git_blob_sha": "f9fe070a804402ccc787d405283293473c35aec2",
-      "bytes": 12597
+      "git_blob_sha": "7934522a19066d519ceea889c9b63f190200091c",
+      "bytes": 15696
     },
     {
       "path": "chapter-atlas.html",
-      "git_blob_sha": "b7885958f015a9dd72f37eb82fed9dd4260fe3c5",
-      "bytes": 4404
+      "git_blob_sha": "2fd5ea0da0f925d4e41e9a2bf1376840f811426d",
+      "bytes": 4733
     },
     {
       "path": "witness-crosswalk-001.html",
       "git_blob_sha": "644c1efe050242d33ebfecd1cae55d999549bc29",
-      "bytes": 4961
+      "bytes": 4968
     },
     {
       "path": "witness-crosswalk-002.html",
       "git_blob_sha": "5350b824a11f426149fc43644fa2bb104fe03846",
-      "bytes": 5157
+      "bytes": 5162
     },
     {
       "path": "witness-crosswalk-003.html",
       "git_blob_sha": "f159963e7916b0175680b86379f11ddb9877efb6",
-      "bytes": 5209
+      "bytes": 5214
     },
     {
       "path": "witness-crosswalk-004.html",
       "git_blob_sha": "6935e0caf2c951914cffa20e493763e0abe85cd1",
-      "bytes": 5281
+      "bytes": 5286
     },
     {
       "path": "witness-crosswalk-005.html",
       "git_blob_sha": "437aca338a9f2628cdb75faac045d652672775f1",
-      "bytes": 5437
+      "bytes": 5444
     },
     {
       "path": "witness-crosswalk-006.html",
       "git_blob_sha": "6ef31fdf64338eb3d68224db22f8a10222b58479",
-      "bytes": 4967
+      "bytes": 4972
     },
     {
       "path": "witness-crosswalk-007.html",
       "git_blob_sha": "9bd632e33a8ae6a0aac200b42a2cf3e055b2c376",
-      "bytes": 5340
+      "bytes": 5345
+    },
+    {
+      "path": "witness-crosswalk-008.html",
+      "git_blob_sha": "39213bda4455cfd1e1517f836e70c4e1e7d98935",
+      "bytes": 5173
+    },
+    {
+      "path": "witness-crosswalk-009.html",
+      "git_blob_sha": "175ce16cb6e2e8cb9364ef676e10240de1e476f1",
+      "bytes": 5179
+    },
+    {
+      "path": "witness-crosswalk-010.html",
+      "git_blob_sha": "83a731185aa0f6ba2d71ebde08f81a3bcdb45388",
+      "bytes": 5343
     }
   ],
   "invariants": [
@@ -136,7 +166,13 @@
     "DIRECTOR_MEMORY != COMPLETE_HISTORY",
     "REPORTED_INTENTION != EXECUTED_TRANSFER",
     "OBSERVATION != CONDITIONED_JUDGMENT",
-    "OVERLAPPING_ACCOUNTS != IDENTICAL_EXPERIENCE"
+    "OVERLAPPING_ACCOUNTS != IDENTICAL_EXPERIENCE",
+    "SECONDHAND_STORIES != LIVED_EXPERIENCE",
+    "DESIRE != PERMISSION",
+    "RESTRAINT != ERASURE_OF_INTRUSION",
+    "PUBLIC_AUTHORITY != COMPLETE_PRIVATE_HISTORY",
+    "CROWD_REACTION != EVIDENCE_OF_TRUTH",
+    "OFFICIAL_ANNOUNCEMENT != EXECUTED_TRANSFER"
   ],
   "provenance": "One GitHub source ancestry; published Pages is a mirror, not an independent witness; original art and interpretation, no novel passages reproduced."
 }
