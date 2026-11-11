@@ -1,13 +1,13 @@
 {
   "schema": "bnw.living-registry.v1",
   "repository": "DavidWise01/bravenewworld",
-  "release": "B011-full-story",
+  "release": "B012-full-story",
   "last_checked": "2026-11-10",
   "canon": {
     "chapters": 18,
-    "playable_book_chapters": 11,
+    "playable_book_chapters": 12,
     "film_labs": 0,
-    "witness_crosswalks": 11
+    "witness_crosswalks": 12
   },
   "chapter_map": [
     "The Hatchery",
@@ -86,19 +86,24 @@
       "bytes": 15775
     },
     {
+      "path": "episodes/B012-the-refused-party.html",
+      "git_blob_sha": "9ec8c4a194221ff7d135fcf2955bd91d9c37f2ef",
+      "bytes": 15075
+    },
+    {
       "path": "engine/story-engine.js",
-      "git_blob_sha": "792f519be18a78d140035b2eddcbc0dea42960d6",
-      "bytes": 33098
+      "git_blob_sha": "e135da99e2e9dd818cf153b02e918ae8e278790f",
+      "bytes": 35202
     },
     {
       "path": "index.html",
-      "git_blob_sha": "9fc3c3b6c955a4b091aa2d32f27c0884dc5b7206",
-      "bytes": 16732
+      "git_blob_sha": "791e121cb02094e2e4bcc9c79f40c70381bb90e1",
+      "bytes": 17815
     },
     {
       "path": "chapter-atlas.html",
-      "git_blob_sha": "3b1e84104e14761a68ae58695dd3e35e32da0867",
-      "bytes": 4843
+      "git_blob_sha": "0abf81b5439736f0f8e223efc6f04133f5ea2df1",
+      "bytes": 4943
     },
     {
       "path": "witness-crosswalk-001.html",
@@ -154,6 +159,11 @@
       "path": "witness-crosswalk-011.html",
       "git_blob_sha": "6402de7255242329174660e8045bee19f1112f38",
       "bytes": 5223
+    },
+    {
+      "path": "witness-crosswalk-012.html",
+      "git_blob_sha": "99984b82c6bd975d0598dcf82a2ab54d14523ad9",
+      "bytes": 5091
     }
   ],
   "invariants": [
@@ -185,7 +195,10 @@
     "OFFICIAL_ANNOUNCEMENT != EXECUTED_TRANSFER",
     "PUBLIC_INTEREST != HUMAN_UNDERSTANDING",
     "BORROWED_FAME != INDEPENDENT_AUTHORITY",
-    "SHARED_STIMULUS != SHARED_INTERPRETATION"
+    "SHARED_STIMULUS != SHARED_INTERPRETATION",
+    "PUBLIC_APPROVAL != LASTING_FRIENDSHIP",
+    "GUEST_EXPECTATION != JOHN_CONSENT",
+    "OFFICIAL_DISCIPLINE != ARTISTIC_REFUTATION"
   ],
   "provenance": "One GitHub source ancestry; published Pages is a mirror, not an independent witness; original art and interpretation, no novel passages reproduced."
 }
