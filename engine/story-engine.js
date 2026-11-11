@@ -113,7 +113,21 @@ if(mode===5){rect(21,37,280,94,'#aa7a70');for(let j=0;j<7;j++)rect(31+j*39,46,28
 if(mode===6){for(let j=0;j<3;j++){rect(9+j*105,26,94,100,['#4b466d','#3a5a6a','#66536a'][j]);outline(9+j*105,26,94,100,'#95cbd2')}type('DIRECTOR',28,41,'#ffe1b1',8);type('JOHN',146,41,'#ffe1b1',8);type('LINDA',251,41,'#ffe1b1',8);scientist(54,97,'#d9bb91',t);john(160,97);linda(263,97);type('THREE ROOTS / ONE SHARED EVENT',48,137,'#99f1e8',8)}
 rect(0,0,320,15,'#071629');type('MALPAIS / RESERVATION / BNW · '+data.id,5,10,'#99f0e7',7);
 }
-function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B007')malpais(t,s.mode);else if(data.id==='B006')reservationJourney(t,s.mode);else if(data.id==='B005')solidarity(t,s.mode);else if(data.id==='B004')bernardHelmholtz(t,s.mode);else if(data.id==='B003')worldState(t,s.mode);else if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
+function johnsStory(t,mode){
+rect(0,0,W,H,'#182348');rect(0,17,320,91,'#986b83');for(let j=0;j<8;j++){const x=j*44;rect(x,69+j%3*9,44,63,'#bb8b70');rect(x+7,77+j%3*9,10,17,'#55445a');rect(x+24,83+j%3*8,10,15,'#5a3d56')}rect(0,135,320,23,'#725971');for(let j=0;j<10;j++)rect(j*37,142,19,2,'#c2937b');
+const john=(x,y,small=false)=>{scientist(x,y,small?'#bba992':'#e0c8a3',t);rect(x-8,y-25,16,7,'#aa866e')};
+const linda=(x,y)=>{scientist(x,y,'#ab9a9c',t);rect(x-9,y-25,17,7,'#c4a784')};
+const frame=(x,y,w,q,s)=>{rect(x,y,w,q,'#172b47');outline(x,y,w,q,'#8bdbd7');type(s,x+7,y+12,'#ffdfa8',8)};
+if(mode===0){frame(51,30,218,24,'JOHN TELLS BERNARD');john(122,116);scientist(224,115,'#566a9e',t);linda(46,119);type('MEMORY != OMNISCIENCE',85,63,'#f7daaa',8)}
+if(mode===1){rect(28,28,264,95,'#3e4b79');frame(54,36,212,21,'LINDA REMEMBERS LONDON');linda(86,116);john(195,117,true);for(let j=0;j<5;j++){rect(103+j*32,70,18,33,'#6987bd');rect(108+j*32,63,8,7,'#b5c4ec')}type('HEARD OF != LIVED IN',93,28,'#ffdea8',8)}
+if(mode===2){rect(25,25,270,100,'#8c685f');rect(45,44,215,56,'#ddad85');for(let j=0;j<12;j++){type(String.fromCharCode(65+j),59+(j%6)*29,60+Math.floor(j/6)*22,'#51445c',10)}linda(61,114);john(245,116,true);type('LEARNING THE LETTERS',90,24,'#ffe8bc',8)}
+if(mode===3){rect(75,30,167,98,'#584863');rect(98,40,122,70,'#edc398');outline(98,40,122,70,'#754865');type('SHAKESPEARE',116,63,'#543655',10);type('WORDS / EMOTION',115,77,'#5c4665',8);john(60,116);rect(245,70,45,32,'#27263e');outline(245,70,45,32,'#e09b88');type('ANGER',251,89,'#ffdbb4',8)}
+if(mode===4){frame(44,29,226,21,'THE CLOSED CIRCLE');for(let j=0;j<6;j++)scientist(40+j*45,116,['#b08c7c','#d0aa8c','#83a99c'][j%3],t);john(163,78,true);rect(128,91,71,5,'#e0a987');rect(70,59,17,22,'#c99d7d');rect(76,53,6,7,'#dcb991');type('CRAFT + EXCLUSION',105,26,'#ffdfad',8)}
+if(mode===5){rect(0,20,320,100,'#343b69');for(let j=0;j<8;j++)rect(j*46,86+(j%3)*5,48,32,'#77516e');rect(0,38,320,8,'#6f5e9c');rect(148,25,24,24,'#f5d4ba');john(163,112);type('A PRIVATE ORDEAL',103,29,'#ffe2ba',8);type('NOT A PUBLIC INITIATION',75,130,'#abeee3',8)}
+if(mode===6){rect(25,31,270,95,'#334871');frame(65,33,190,22,'INVITATION / LONDON');john(98,117);scientist(222,117,'#5f78a7',t);rect(128,74,64,13,'#d6b27e');type('LINDA TOO?',132,83,'#25334b',8);type('OFFER != COMPLETED TRAVEL',75,29,'#ffdfaa',7)}
+rect(0,0,320,15,'#071629');type('JOHNS STORY / BNW · '+data.id,6,10,'#99efe4',8);
+}
+function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B008')johnsStory(t,s.mode);else if(data.id==='B007')malpais(t,s.mode);else if(data.id==='B006')reservationJourney(t,s.mode);else if(data.id==='B005')solidarity(t,s.mode);else if(data.id==='B004')bernardHelmholtz(t,s.mode);else if(data.id==='B003')worldState(t,s.mode);else if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
 if(data.id==='B001'&&s.mode===2){for(let j=0;j<24;j++){const x=16+(j%8)*36,y=32+Math.floor(j/8)*9;rect(x,y,2,2,j%3?'#9ce4ff':'#f7c876')}}
 if(data.id==='B001'&&s.mode===3){for(let j=0;j<5;j++)rect(28+j*59,132,19,2,['#ed7182','#f4a757','#e8dc6a','#5dd5a7','#77b9ff'][j])}
 if(data.id==='B001'&&s.mode===6){const glow=Math.floor(4+Math.sin(t/30)*4);outline(114-glow/2,40-glow/2,96+glow,70+glow,'#cbb5f4')}
