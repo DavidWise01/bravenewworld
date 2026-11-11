@@ -4,6 +4,8 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B004 — Bernard and Helmholtz](episodes/B004-bernard-and-helmholtz.html)** — seven animated original narrative acts: Lenina's public invitation, the city flight, Benito's soma offer, Bernard's contradiction, Helmholtz's success and his desire to write something meaningful.
+- [Witness Crosswalk 004](witness-crosswalk-004.html) — social exclusion and unused creative capacity are two distinct roots of alienation.
 - **[PLAY B003 — The World State](episodes/B003-the-world-state.html)** — seven intercut story acts with Mustapha Mond, Lenina and Fanny, Bernard Marx, official history, peer pressure and social consensus.
 - [Witness Crosswalk 003](witness-crosswalk-003.html) — Controller testimony, conformity and dissent mapped to their source ancestry.
 - **[PLAY B002 — The Conditioning Rooms](episodes/B002-the-conditioning-rooms.html)** — seven original story acts covering books and flowers, aversive association, the Director's economic rationale, sleep-teaching, and a final question about freely formed beliefs.
@@ -14,7 +16,7 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, and **Chapters One through Three are committed as playable seven-act stories**. Chapters Four–Eighteen remain mapped but not yet released.
+The **novel contains 18 numbered chapters**, and **Chapters One through Four are committed as playable seven-act stories**. Chapters Five–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -124,3 +126,28 @@ Chapter Three leaves the Hatchery's nursery and introduces the political and int
 ```
 
 This is an original interpretation, not copied copyrighted passages or a literal comic adaptation of any film. The shared Canvas2D engine retains B001/B002 art and adds new backgrounds and sprites for B003. The canonical registry now records **3 playable stories (21 acts), 3 crosswalks, no film reviews**, and Git blob identities. Only released chapters are marked playable. **Next: B004 — Bernard and Helmholtz.**
+
+
+---
+
+## B004 — Bernard and Helmholtz · Fourth living boundary (2026-11-10)
+
+**[Play B004](episodes/B004-bernard-and-helmholtz.html)** · **[Witness Crosswalk 004](witness-crosswalk-004.html)**
+
+This seven-act original Canvas2D interpretation follows Chapter Four's actual sequence. Lenina accepts Bernard's invitation to the New Mexico Reservation publicly, then flies with Henry above a socially ordered London. Benito Hoover offers soma to a troubled Bernard. Bernard, despite suffering ridicule over his size and social position, treats Delta-Minus attendants harshly. He flies to the Propaganda Bureau and meets Helmholtz Watson, an accomplished emotional engineer whose success has not satisfied his desire for consequential writing. Both men are uneasy, but their reasons differ.
+
+The new sprite modes cover the crowded lift, aerial London, soma offer, caste hierarchy, Helmholtz's office, the unwritten sentence and two separate witness roots. Each scene contains original text, invented internal thought explicitly labeled as such, two evidence-interpretation choices, an observation gate and a local JSON export. No movie-review track exists in this series.
+
+```text
+BERNARD:    STATUS / EXCLUSION ------> DISCOMFORT
+HELMHOLTZ:  SUCCESS / UNUSED TALENT -> DISCOMFORT
+                           |
+                       {{ ROOTS }}
+                           |
+             SAME_DISCOMFORT != SAME_CAUSE
+             SUCCESS != INNER_FULFILLMENT
+                           |
+                        [ PRESERVE ]
+```
+
+**Release ledger:** 4 completed playable book stories × 7 acts = 28 authored story acts; 4 witness crosswalks; 14 remaining chapters mapped. Git source history is persistent; GitHub Pages deployment is a separate verification boundary. **Next B005 — A Solidarity Ritual (Chapter Five)**, with original age-appropriate non-explicit symbolic art and an account of Bernard's isolation.
