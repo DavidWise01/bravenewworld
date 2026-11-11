@@ -4,6 +4,8 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B003 — The World State](episodes/B003-the-world-state.html)** — seven intercut story acts with Mustapha Mond, Lenina and Fanny, Bernard Marx, official history, peer pressure and social consensus.
+- [Witness Crosswalk 003](witness-crosswalk-003.html) — Controller testimony, conformity and dissent mapped to their source ancestry.
 - **[PLAY B002 — The Conditioning Rooms](episodes/B002-the-conditioning-rooms.html)** — seven original story acts covering books and flowers, aversive association, the Director's economic rationale, sleep-teaching, and a final question about freely formed beliefs.
 - [Witness Crosswalk 002](witness-crosswalk-002.html) — two conditioning methods, one institutional source lineage.
 - **[PLAY B001 — The Hatchery](episodes/B001-the-hatchery.html)** — seven fully authored and animated story acts with prose, invented dramatized thoughts, interactive ethical questions, inspection records, keyboard navigation and an exportable witness packet.
@@ -12,7 +14,7 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, and **Chapters One and Two are now committed as playable seven-act stories**. Chapters Three–Eighteen remain mapped but not yet released.
+The **novel contains 18 numbered chapters**, and **Chapters One through Three are committed as playable seven-act stories**. Chapters Four–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -94,3 +96,31 @@ NURSERY -> BOOKS + FLOWERS -> AVERSIVE PAIRING -> AVOIDANCE
 ```
 
 The shared Canvas2D engine now renders B002's original nursery backgrounds, children, books, flowers, stimulus warning and sleep-teaching effects. Seven scenes have original prose, invented dramatized thoughts, explanatory notes, two interpretation choices apiece, and locally exportable witness packets. The Git source registry contains two playable book chapters, zero movie-review chapters, and two illustrated witness crosswalks. **Next narrative target: B003 — The World State.**
+
+
+---
+
+## B003 — The World State / Third living boundary (2026-11-10)
+
+**[Play B003: The World State](episodes/B003-the-world-state.html)** · **[Witness Crosswalk 003](witness-crosswalk-003.html)**
+
+Chapter Three leaves the Hatchery's nursery and introduces the political and interpersonal world of the State. Mustapha Mond, Western Europe's World Controller, discusses a selected history of conflict and the drive toward stability; Lenina and Fanny reveal the internal pressure to follow social expectations; Bernard Marx reacts against co-workers who objectify Lenina and dismiss his unhappiness with an offer of soma. These conversations alternate in Huxley's chapter and are here transformed into seven original narrative acts with animated pixel-art backdrops and source-attributed witness choices.
+
+```text
+  OFFICIAL HISTORY (MOND)         PEER EXPECTATIONS (FANNY)
+           |                               |
+           +--------------+----------------+
+                          |
+                   BERNARD'S DOUBT
+                          |
+                     {{ ROOTS }}
+                          |
+            COMMON CONDITIONING SOURCE
+                          |
+   SOCIAL_CONSENSUS != INDEPENDENT_TRUTH
+      INSTITUTIONAL_STATUS != PROOF
+                          |
+                      [ PRESERVE ]
+```
+
+This is an original interpretation, not copied copyrighted passages or a literal comic adaptation of any film. The shared Canvas2D engine retains B001/B002 art and adds new backgrounds and sprites for B003. The canonical registry now records **3 playable stories (21 acts), 3 crosswalks, no film reviews**, and Git blob identities. Only released chapters are marked playable. **Next: B004 — Bernard and Helmholtz.**
