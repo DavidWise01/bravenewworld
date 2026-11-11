@@ -83,7 +83,21 @@ if(mode===2){rect(45,29,230,100,'#294467');outline(45,29,230,100,'#dba67c');type
 if(mode>=3){rect(22,24,276,110,'#303a62');for(let j=0;j<6;j++){rect(31+j*47,28,28,90,'#254061');rect(35+j*47,34,20,68,'#475a80')}rect(87,81,146,22,'#835981');rect(102,73,116,20,'#c59a7d');rect(116,82,88,11,'#e6bc94');rect(157,69,12,11,'#ffe2b8');for(let j=0;j<12;j++){const a=j*Math.PI/6,x=160+84*Math.cos(a),y=82+46*Math.sin(a);rect(x-4,y-6,8,9,j===8?'#f0ac87':'#a6b8d9');rect(x-5,y+3,10,8,j===8?'#506897':'#957fa5')}bern(72,126);type(['','','','TWELVE AT ONE TABLE','ONE CUP / ONE RHYTHM','THE CHORUS','THE AFTERMATH'][mode],90,23,'#ffdbac',8);if(mode===4||mode===5)for(let j=0;j<7;j++){const x=28+j*41,y=39+Math.sin((t+j*8)/12)*3;rect(x,y,19,3,'#e2baff')}if(mode===6){rect(21,36,69,63,'#142d49');outline(21,36,69,63,'#88cdd3');type('ALONE',34,52,'#ffbc93',9);rect(100,49,120,4,'#f2c38f')}}
 rect(0,0,320,15,'#071327');type('SOLIDARITY / BNW · '+data.id,6,10,'#9af1e5',8);
 }
-function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B005')solidarity(t,s.mode);else if(data.id==='B004')bernardHelmholtz(t,s.mode);else if(data.id==='B003')worldState(t,s.mode);else if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
+function reservationJourney(t,mode){
+rect(0,0,W,H,'#101c36');for(let j=0;j<8;j++){rect(j*43,16,3,122,'#365174');rect(j*43+6,20,31,5,'#6f89a8')}rect(0,139,320,20,'#19324d');
+const bern=(x,y)=>{scientist(x,y,'#526da2',t);rect(x-8,y-25,16,6,'#30283e')};
+const len=(x,y)=>{scientist(x,y,'#cfa0cd',t);rect(x-8,y-25,16,6,'#e8bb87')};
+const screen=(x,y,w,hh,s)=>{rect(x,y,w,hh,'#183752');outline(x,y,w,hh,'#83d0db');type(s,x+6,y+13,'#ffdca6',8)};
+if(mode===0){rect(13,27,294,101,'#36556a');for(let j=0;j<5;j++)rect(18+j*60,36,49,79,'#244e67');screen(103,27,113,23,'PRIVATE OR PUBLIC?');bern(100,117);len(208,117);type('TWO IDEAS OF A DATE',97,64,'#ffd1aa',8)}
+if(mode===1){rect(0,16,320,105,'#244264');for(let j=0;j<6;j++){rect(j*57,87+Math.sin((t+j*6)/17)*6,57,6,'#61acc9');rect(j*57,95+Math.sin((t+j*6)/17)*6,57,8,'#307c9a')}rect(70,35,185,25,'#8b97c1');rect(93,26,138,11,'#d8a9da');rect(124,60,80,10,'#abcad7');bern(141,116);len(190,116);type('ENGLISH CHANNEL',104,23,'#ffdeb1',8)}
+if(mode===2){screen(45,29,230,85,'WORDS VERSUS HABITS');bern(102,105);len(213,105);for(let j=0;j<5;j++)rect(85+j*35,66,21,5,['#cfa9ee','#72dcd3','#edae72'][j%3])}
+if(mode===3){rect(21,24,278,108,'#293d65');screen(39,34,242,20,'DIRECTOR / TRAVEL PERMIT');scientist(238,103,'#e7ceaa',t);bern(78,117);for(let j=0;j<8;j++){rect(132+j*18,73,2,23,'#89c0cb');rect(138+j*18,72,10,6,'#dbb892')}type('A WOMAN LOST IN A STORM',81,29,'#f6d0ab',7)}
+if(mode===4){screen(59,35,200,65,'ICELAND / POSSIBLE EXILE');bern(96,118);scientist(244,118,'#dac99b',t);rect(122,64,83,17,'#6e4a67');type('THREAT',143,76,'#ffb6b1',9)}
+if(mode===5){rect(0,20,320,100,'#95576b');for(let j=0;j<6;j++){rect(j*55,79+j%2*13,35,44,'#d58e75');rect(j*55+8,65+j%3*9,21,19,'#bf7861')}screen(64,32,194,21,'SANTA FE / WARDEN');bern(94,118);len(197,118);type('RESERVATION AHEAD',114,27,'#ffe2a8',8)}
+if(mode===6){rect(17,25,286,110,'#334269');screen(37,33,244,23,'INCOMING MESSAGE / HELMHOLTZ');bern(90,115);len(231,115);rect(122,74,80,14,'#ae537b');type('ICELAND',137,85,'#fff0bf',9);rect(131,94,63,4,'#f2c08a');type('FEAR IS NOW REAL',100,29,'#f9d69a',8)}
+rect(0,0,320,15,'#081329');type('THE RESERVATION JOURNEY / BNW · '+data.id,5,10,'#91efe7',7);
+}
+function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B006')reservationJourney(t,s.mode);else if(data.id==='B005')solidarity(t,s.mode);else if(data.id==='B004')bernardHelmholtz(t,s.mode);else if(data.id==='B003')worldState(t,s.mode);else if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
 if(data.id==='B001'&&s.mode===2){for(let j=0;j<24;j++){const x=16+(j%8)*36,y=32+Math.floor(j/8)*9;rect(x,y,2,2,j%3?'#9ce4ff':'#f7c876')}}
 if(data.id==='B001'&&s.mode===3){for(let j=0;j<5;j++)rect(28+j*59,132,19,2,['#ed7182','#f4a757','#e8dc6a','#5dd5a7','#77b9ff'][j])}
 if(data.id==='B001'&&s.mode===6){const glow=Math.floor(4+Math.sin(t/30)*4);outline(114-glow/2,40-glow/2,96+glow,70+glow,'#cbb5f4')}
