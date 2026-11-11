@@ -19,7 +19,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for p in README.md index.html chapter-atlas.html living-kernel.html engine/story-engine.js episodes/B001-the-hatchery.html witness-crosswalk-001.html episodes/B002-the-conditioning-rooms.html witness-crosswalk-002.html episodes/B003-the-world-state.html witness-crosswalk-003.html episodes/B004-bernard-and-helmholtz.html witness-crosswalk-004.html kernel/registry.json; do
+          for p in README.md index.html chapter-atlas.html living-kernel.html engine/story-engine.js episodes/B001-the-hatchery.html witness-crosswalk-001.html episodes/B002-the-conditioning-rooms.html witness-crosswalk-002.html episodes/B003-the-world-state.html witness-crosswalk-003.html episodes/B004-bernard-and-helmholtz.html witness-crosswalk-004.html episodes/B005-the-solidarity-ritual.html witness-crosswalk-005.html kernel/registry.json; do
             test -s "$p"
             echo "PASS $p"
           done
@@ -30,10 +30,10 @@ jobs:
           root=Path(".")
           reg=json.loads(Path("kernel/registry.json").read_text())
           assert reg["schema"]=="bnw.living-registry.v1"
-          assert reg["canon"]["playable_book_chapters"]==4
-          assert reg["canon"]["witness_crosswalks"]==4
+          assert reg["canon"]["playable_book_chapters"]==5
+          assert reg["canon"]["witness_crosswalks"]==5
           assert len(reg["chapter_map"])==18
-          for chapter in ("B001-the-hatchery","B002-the-conditioning-rooms","B003-the-world-state","B004-bernard-and-helmholtz"):
+          for chapter in ("B001-the-hatchery","B002-the-conditioning-rooms","B003-the-world-state","B004-bernard-and-helmholtz","B005-the-solidarity-ritual"):
             c=Path("episodes/"+chapter+".html").read_text()
             found=re.search(r'window\.BNW_CHAPTER=(\{.*?\});</script>',c,re.S)
             assert found, f"{chapter} missing story dataset"
@@ -53,14 +53,14 @@ jobs:
             def handle_starttag(self,tag,attrs):
               if tag in ("a","script","link"):
                 self.links += [v for k,v in attrs if k in ("href","src") and v and not v.startswith(("http:","https:","#","mailto:"))]
-          files=["index.html","chapter-atlas.html","living-kernel.html","episodes/B001-the-hatchery.html","episodes/B002-the-conditioning-rooms.html","episodes/B003-the-world-state.html","episodes/B004-bernard-and-helmholtz.html","witness-crosswalk-001.html","witness-crosswalk-002.html","witness-crosswalk-003.html","witness-crosswalk-004.html"]
+          files=["index.html","chapter-atlas.html","living-kernel.html","episodes/B001-the-hatchery.html","episodes/B002-the-conditioning-rooms.html","episodes/B003-the-world-state.html","episodes/B004-bernard-and-helmholtz.html","episodes/B005-the-solidarity-ritual.html","witness-crosswalk-001.html","witness-crosswalk-002.html","witness-crosswalk-003.html","witness-crosswalk-004.html","witness-crosswalk-005.html"]
           for name in files:
             q=root/name
             parser=Links();parser.feed(q.read_text())
             for l in parser.links:
               target=q.parent/l.split("?")[0].split("#")[0]
               if l and not target.exists(): raise AssertionError(f"Broken link: {name} -> {l}")
-          print("PASS: 28 original story acts; 18 mapped; 11 Git blob IDs; local links")
+          print("PASS: 35 original story acts; 18 mapped; 13 Git blob IDs; local links")
           PY
       - name: Verify all browser JavaScript syntax
         shell: bash
@@ -71,7 +71,7 @@ jobs:
           from pathlib import Path
           import re
           Path('/tmp/bnw-inline').mkdir(exist_ok=True)
-          files=["index.html","living-kernel.html","episodes/B001-the-hatchery.html","episodes/B002-the-conditioning-rooms.html","episodes/B003-the-world-state.html","episodes/B004-bernard-and-helmholtz.html","witness-crosswalk-001.html","witness-crosswalk-002.html","witness-crosswalk-003.html","witness-crosswalk-004.html"]
+          files=["index.html","living-kernel.html","episodes/B001-the-hatchery.html","episodes/B002-the-conditioning-rooms.html","episodes/B003-the-world-state.html","episodes/B004-bernard-and-helmholtz.html","episodes/B005-the-solidarity-ritual.html","witness-crosswalk-001.html","witness-crosswalk-002.html","witness-crosswalk-003.html","witness-crosswalk-004.html","witness-crosswalk-005.html"]
           n=0
           for fname in files:
             content=Path(fname).read_text(encoding="utf-8")
