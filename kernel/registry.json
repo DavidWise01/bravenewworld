@@ -72,8 +72,8 @@
     },
     {
       "path": "witness-crosswalk-003.html",
-      "git_blob_sha": "93ade46fe5ad141b1e7e1ceaca2d5ca1978d7ef7",
-      "bytes": 5216
+      "git_blob_sha": "f159963e7916b0175680b86379f11ddb9877efb6",
+      "bytes": 5209
     }
   ],
   "invariants": [
