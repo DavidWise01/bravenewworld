@@ -4,6 +4,8 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B007 — The Reservation](episodes/B007-the-reservation.html)** — original seven-act Malpais story: aged residents, caregiving, absence of soma, a non-graphic ceremony, John and Linda's testimony, and Bernard's emerging connection to the Director.
+- [Witness Crosswalk 007](witness-crosswalk-007.html) — visitor judgments, John and Linda's firsthand experiences, and the Director's recollection kept distinct.
 - **[PLAY B006 — The Reservation Journey](episodes/B006-the-reservation-journey.html)** — seven original Canvas acts from the dark English Channel to Santa Fe, the Director's lost companion, a threatened Iceland transfer, and Bernard's changing response.
 - [Witness Crosswalk 006](witness-crosswalk-006.html) — distinct origins for remembered events, threatened consequences, and actual decisions.
 - **[PLAY B005 — The Solidarity Ritual](episodes/B005-the-solidarity-ritual.html)** — seven animated original acts: Lenina and Henry's evening, crematorium phosphorus recovery, cabaret, soma, and Bernard's twelve-person Solidarity Service.
@@ -20,7 +22,7 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, and **Chapters One through Six are committed as playable seven-act stories**. Chapters Seven–Eighteen remain mapped but not yet released.
+The **novel contains 18 numbered chapters**, and **Chapters One through Seven are committed as playable seven-act stories**. Chapters Eight–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -208,3 +210,32 @@ BERNARD --REACTS----------------> FEAR / SOMA
 ```
 
 **Release ledger:** six playable book chapters × seven acts = **42 authored interactive acts**; six witness crosswalks; twelve remaining chapters mapped but not yet playable. Fifteen source assets in the canonical registry with Git blob hashes. **Next B007 — The Reservation**, with first-person perspectives preserved rather than accepting only the Warden's descriptions.
+
+
+---
+
+## B007 — The Reservation · Seventh living boundary (2026-11-11)
+
+**[Play B007](episodes/B007-the-reservation.html)** · **[Witness Crosswalk 007](witness-crosswalk-007.html)**
+
+Seven original interactive Canvas2D acts follow Bernard and Lenina through Malpais. Lenina sees naturally aged residents and infant care, discovers she has no soma to dull her discomfort, and witnesses a ceremonial gathering (represented non-graphically). John approaches after the ceremony, describing his exclusion and the mother who came from the World State; Linda recounts an accidental separation from the Director, years of life among the residents, and raising her son. Bernard recognizes John's father's name, Tomakin, as connected to the Director's earlier account. These personal testimonies illuminate the past without automatically establishing all motives, chronology or future consequences.
+
+Original pixel sprites depict the pueblo, a ladder and elder, caregiving, an absent soma reminder, ceremonial drumming, John, Linda, and a three-source evidence wall. The art and narrative are interpretive and fictional, not a photographic representation of actual present-day Indigenous communities or a reproduction of the novel's copyrighted dialogue.
+
+```text
+MALPAIS (OBSERVED COMMUNITY)
+       |
+       +--> LENINA (VISITOR JUDGMENT)
+       +--> JOHN (LIVED EXPERIENCE)
+       +--> LINDA (FIRSTHAND HISTORY)
+       +--> DIRECTOR (PARTIAL OLD MEMORY)
+                         |
+                     {{ ROOTS }}
+                         |
+     OBSERVATION != CONDITIONED_JUDGMENT
+     OVERLAPPING_ACCOUNTS != IDENTICAL_EXPERIENCE
+                         |
+                     [ PRESERVE ]
+```
+
+**Release ledger:** seven playable book chapters × seven acts = **49 authored story acts**, seven witness crosswalks, eleven remaining chapters mapped but not yet playable. The canonical registry lists seventeen source assets with Git blob identities; automated CI checks source syntax, links, source consistency, and attempts GitHub Pages deployment. **Next B008 — John's upbringing**, where his personal history and Shakespearean reading enter the evidence record.
