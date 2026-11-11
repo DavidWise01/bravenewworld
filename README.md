@@ -4,6 +4,8 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B014 — Linda's Last Hours](episodes/B014-lindas-last-hours.html)** — seven acts at Park Lane Hospital with Linda, John, the nurse, death-conditioned children and John's grief.
+- [Witness Crosswalk 014](witness-crosswalk-014.html) — institutional calm and grief; self-blame distinguished from medical causation.
 - **[PLAY B013 — The Unwelcome Confession](episodes/B013-the-unwelcome-confession.html)** — seven original acts covering Lenina's hope, Fanny's advice, John's declaration of love, incompatible boundaries, aggression, a safety retreat and the hospital call about Linda.
 - [Witness Crosswalk 013](witness-crosswalk-013.html) — mutual boundaries, responsibility for harm, and the hospital's attributed news.
 - **[PLAY B012 — The Refused Party](episodes/B012-the-refused-party.html)** — seven original acts of John's refusal, Bernard's borrowed popularity collapsing, Lenina's disappointment, and friendship between John and Helmholtz over Shakespeare.
@@ -34,7 +36,7 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, and **Chapters One through Thirteen are committed as playable seven-act stories**. Chapters Fourteen–Eighteen remain mapped but not yet released.
+The **novel contains 18 numbered chapters**, and **Chapters One through Fourteen are committed as playable seven-act stories**. Chapters Fifteen–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -370,3 +372,32 @@ JOHN   -> LEAVES / HOSPITAL VISIT STILL AHEAD
 ```
 
 **Release ledger:** thirteen playable original book chapters × seven acts = **91 story acts** and thirteen witness crosswalks. Five chapters remain mapped but unpublished. The canonical registry tracks **29 Git blob-identified core assets**. Dynamic CI checks all chapter datasets, source hashes, local links, JavaScript, and deployment. **Next B014 — Linda at the hospital; John's grief versus institutional death conditioning.**
+
+
+---
+
+## B014 — Linda's Last Hours (2026-11-11)
+
+[Play B014](episodes/B014-lindas-last-hours.html) · [Witness Crosswalk 014](witness-crosswalk-014.html)
+
+John arrives at the Park Lane Hospital for the Dying. A nurse is embarrassed by the word mother but treats death as a routine. Linda is heavily sedated and hardly responds. A group of Delta children comes to the ward for death-conditioning and makes unkind comments about Linda. John angrily pushes a child: grief explains his distress but does not excuse physical harm. Linda calls him Popé, and in his pain John shakes her. She struggles to breathe and dies. He blames himself, but that guilt is not independently verified medical causation. The nurse gives the children chocolate éclairs to restore pleasant associations with death. John leaves in grief. Chapter Fifteen continues in the hospital's soma distribution area.
+
+Seven original, non-graphic Canvas2D scenes depict the hospital entrance, Linda's bedside, children's conditioning, nurse's intervention, Linda's confusion, her death and the distribution of sweets. No novel dialogue is reproduced.
+
+```text
+JOHN --------> ARRIVAL / MEMORIES / GRIEF
+LINDA -------> SOMA / CONFUSION / DEATH
+NURSE -------> DEATH-CONDITIONING PROGRAM
+DELTA TWINS --> COMMENTS / OBSERVATION
+NURSE -------> ECLAIRS / RESTORED CALM
+                   |
+               {{ ROOTS }}
+                   |
+CONDITIONED_CALM != ABSENCE_OF_GRIEF
+SELF_BLAME != VERIFIED_CAUSATION
+INSTITUTIONAL_ROUTINE != PERSONAL_DIGNITY
+                   |
+               [ PRESERVE ]
+```
+
+Release ledger: **14 playable chapters, 98 acts, 14 witness crosswalks, 31 tracked Git source assets.** Four chapters remain. Next: B015 — The Soma Distribution Crisis; preserve `DECLARED_COURAGE != OBSERVED_ACTION`.
