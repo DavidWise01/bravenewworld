@@ -4,13 +4,15 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B002 — The Conditioning Rooms](episodes/B002-the-conditioning-rooms.html)** — seven original story acts covering books and flowers, aversive association, the Director's economic rationale, sleep-teaching, and a final question about freely formed beliefs.
+- [Witness Crosswalk 002](witness-crosswalk-002.html) — two conditioning methods, one institutional source lineage.
 - **[PLAY B001 — The Hatchery](episodes/B001-the-hatchery.html)** — seven fully authored and animated story acts with prose, invented dramatized thoughts, interactive ethical questions, inspection records, keyboard navigation and an exportable witness packet.
 - [Story hub](index.html) — original animated Hatchery pixel scene.
 - [Witness Crosswalk 001](witness-crosswalk-001.html) — factory statements versus attributed ethical inferences, with independent original Canvas art.
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, but only **Chapter One is published and playable in this GitHub release**. The previous local project package is separate and has not been silently presented as committed to this new repository. Chapter Two is next.
+The **novel contains 18 numbered chapters**, and **Chapters One and Two are now committed as playable seven-act stories**. Chapters Three–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -69,3 +71,26 @@ node --check engine/story-engine.js
 GitHub Actions runs source, link and JavaScript syntax validation and attempts Pages deployment. The Pages deployment must be confirmed separately from successful source commits. Intended public URL: https://davidwise01.github.io/bravenewworld/
 
 **Next boundary: B002 — Conditioning Rooms.** Build Chapter Two's original story, three or more unique procedural sprites, source-specific witness packet, and append-only Git release.
+
+
+---
+
+## B002 — Conditioning Rooms / Second living boundary (2026-11-10)
+
+**[Play the full seven-act B002 story](episodes/B002-the-conditioning-rooms.html)** · **[Open the witness crosswalk](witness-crosswalk-002.html)**
+
+The Director conducts the students through a Neo-Pavlovian nursery, where Delta infants are initially drawn to books and flowers, then given an aversive stimulus designed to make those objects frightening. In the sleeping rooms, repeated hypnopaedic messages shape caste attitudes. The chapter distinguishes an observed conditioned response, a stated institutional rationale and the ethical question of free choice.
+
+```text
+NURSERY -> BOOKS + FLOWERS -> AVERSIVE PAIRING -> AVOIDANCE
+      \\\-> HYPNOPAEDIA -> REPEATED CASTE MESSAGES
+              |
+        {{ SOURCE ROOT }}
+              |
+ CONDITIONED_RESPONSE != FREE_CHOICE
+ REPEATED_MESSAGE != INDEPENDENT_BELIEF
+              |
+          [ PRESERVE ]
+```
+
+The shared Canvas2D engine now renders B002's original nursery backgrounds, children, books, flowers, stimulus warning and sleep-teaching effects. Seven scenes have original prose, invented dramatized thoughts, explanatory notes, two interpretation choices apiece, and locally exportable witness packets. The Git source registry contains two playable book chapters, zero movie-review chapters, and two illustrated witness crosswalks. **Next narrative target: B003 — The World State.**
