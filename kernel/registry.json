@@ -1,0 +1,66 @@
+{
+  "schema": "bnw.living-registry.v1",
+  "repository": "DavidWise01/bravenewworld",
+  "release": "B001-full-story",
+  "last_checked": "2026-11-10",
+  "canon": {
+    "chapters": 18,
+    "playable_book_chapters": 1,
+    "film_labs": 0,
+    "witness_crosswalks": 1
+  },
+  "chapter_map": [
+    "The Hatchery",
+    "Conditioning Rooms",
+    "The World State",
+    "Bernard and Helmholtz",
+    "A Solidarity Ritual",
+    "A Journey Beyond",
+    "The Reservation",
+    "John's Story",
+    "A Sleeping Visitor",
+    "The Director Disgraced",
+    "The Curious Spectacle",
+    "The Refused Party",
+    "Lenina and John",
+    "Linda's Last Hours",
+    "The Soma Protest",
+    "The Controller's Choice",
+    "The Right to Be Unhappy",
+    "The Lighthouse"
+  ],
+  "assets": [
+    {
+      "path": "episodes/B001-the-hatchery.html",
+      "git_blob_sha": "562042f458c691bc651b1f31706be4c7da1d6b60",
+      "bytes": 15531
+    },
+    {
+      "path": "engine/story-engine.js",
+      "git_blob_sha": "60f234b0026d082029b6ab33cb5c79b8352b296d",
+      "bytes": 8487
+    },
+    {
+      "path": "index.html",
+      "git_blob_sha": "2a3b7ea95f913d015ed22791d184cb2fd3199f0f",
+      "bytes": 6468
+    },
+    {
+      "path": "chapter-atlas.html",
+      "git_blob_sha": "3159f4e45282be47ff3bd05f14de78748e45a1e8",
+      "bytes": 3775
+    },
+    {
+      "path": "witness-crosswalk-001.html",
+      "git_blob_sha": "644c1efe050242d33ebfecd1cae55d999549bc29",
+      "bytes": 4961
+    }
+  ],
+  "invariants": [
+    "EFFICIENCY != HUMAN_WORTH",
+    "OBSERVATION != INFERENCE",
+    "STORY_MAP != PLAYABLE_RELEASE",
+    "GITHUB_SOURCE != INDEPENDENT_PAGES_MIRROR"
+  ],
+  "provenance": "One GitHub source ancestry; published Pages is a mirror, not an independent witness; original art and interpretation, no novel passages reproduced."
+}
