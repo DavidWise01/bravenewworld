@@ -4,6 +4,8 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B013 — The Unwelcome Confession](episodes/B013-the-unwelcome-confession.html)** — seven original acts covering Lenina's hope, Fanny's advice, John's declaration of love, incompatible boundaries, aggression, a safety retreat and the hospital call about Linda.
+- [Witness Crosswalk 013](witness-crosswalk-013.html) — mutual boundaries, responsibility for harm, and the hospital's attributed news.
 - **[PLAY B012 — The Refused Party](episodes/B012-the-refused-party.html)** — seven original acts of John's refusal, Bernard's borrowed popularity collapsing, Lenina's disappointment, and friendship between John and Helmholtz over Shakespeare.
 - [Witness Crosswalk 012](witness-crosswalk-012.html) — expectations versus consent, conditional social approval versus chosen friendship.
 - **[PLAY B011 — London's New Curiosity](episodes/B011-londons-new-curiosity.html)** — seven animated scenes of John's celebrity, Linda's soma holiday, Bernard's borrowed popularity, factory and Eton visits, and the feelies date.
@@ -32,7 +34,7 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, and **Chapters One through Twelve are committed as playable seven-act stories**. Chapters Thirteen–Eighteen remain mapped but not yet released.
+The **novel contains 18 numbered chapters**, and **Chapters One through Thirteen are committed as playable seven-act stories**. Chapters Fourteen–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -339,3 +341,32 @@ JOHN + HELM ----> SHAKESPEARE ----------- > CHOSEN FRIENDSHIP
 ```
 
 **Release ledger:** 12 playable book chapters × 7 original acts = **84 authored story acts**, 12 witness crosswalks, 6 chapters mapped but not yet playable. Canonical registry contains **27 Git blob-identified core source assets**. Dynamic GitHub Actions checks source hashes, 7-act payloads, local navigation, and JavaScript syntax before Pages deployment. The next natural chapter B013 examines John and Lenina's increasingly conflicting expectations in a direct encounter.
+
+
+---
+
+## B013 — The Unwelcome Confession · Thirteenth living boundary (2026-11-11)
+
+**[Play B013](episodes/B013-the-unwelcome-confession.html)** · **[Witness Crosswalk 013](witness-crosswalk-013.html)**
+
+After declining Henry's offer of entertainment, Lenina confides her obsession with John to Fanny and decides to visit him. John declares his love while speaking of marriage and lifelong commitment. Lenina welcomes his feelings but does not share the cultural assumptions underlying marriage; she approaches him physically. John rejects her advance, then becomes angry, insulting and striking her. Lenina retreats to the bathroom and locks the door for safety. A call arrives reporting Linda's critical condition and transfer to the Park Lane Hospital for the Dying, and John leaves abruptly. The hospital scene itself belongs to Chapter Fourteen.
+
+Original non-explicit Canvas2D sprites portray Lenina and Fanny, John's apartment, divergent ideas of love, a refusal of physical intimacy, the locked safety door, and the news telephone. No depiction of sexual activity or violence is required to carry the chapter's evidence. All dramatized dialogue is newly written, not reproduced from the novel or a film adaptation.
+
+```text
+LENINA -> HOPE / ADVICE / INTIMATE APPROACH
+JOHN   -> DECLARATION / REFUSAL / AGGRESSION
+LENINA -> FEAR / SAFETY / LOCKED DOOR
+PHONE  -> LINDA GRAVELY ILL (REPORTED NEWS)
+JOHN   -> LEAVES / HOSPITAL VISIT STILL AHEAD
+                   |
+               {{ WITNESS }}
+                   |
+           ATTRACTION != CONSENT
+ MISUNDERSTANDING != EXCUSE_FOR_HARM
+ EMERGENCY_INTERRUPTION != RESOLUTION
+                   |
+               [ PRESERVE ]
+```
+
+**Release ledger:** thirteen playable original book chapters × seven acts = **91 story acts** and thirteen witness crosswalks. Five chapters remain mapped but unpublished. The canonical registry tracks **29 Git blob-identified core assets**. Dynamic CI checks all chapter datasets, source hashes, local links, JavaScript, and deployment. **Next B014 — Linda at the hospital; John's grief versus institutional death conditioning.**
