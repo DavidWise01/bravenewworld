@@ -27,10 +27,25 @@ else if(mode===5){rect(85,38,150,85,'#1c5269');rect(102,48,115,61,'#071e38');for
 else{for(let j=0;j<4;j++)capsule(35+j*70,52,24,57,t,j);rect(114,40,96,70,'#0b233d');outline(114,40,96,70,'#e1a86a');type('QUESTION',132,68,'#ffd38b',10);type('WHO CHOOSES?',121,89,'#89f2e5',8)}
 rect(0,0,320,15,'#080e27');type('CENTRAL LONDON HATCHERY / BNW · '+data.id,5,10,'#91ecf2',7);}
 function hallway(t){lab(t,0);rect(39,102,236,43,'#26374b');rect(40,103,234,4,'#f0aa55');for(let j=0;j<4;j++)student(56+j*29,120,j,t);scientist(213,116,'#f0d2ab',t);rect(206,110,24,3,'#f7b468')}
-function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
-if(s.mode===2){for(let j=0;j<24;j++){const x=16+(j%8)*36,y=32+Math.floor(j/8)*9;rect(x,y,2,2,j%3?'#9ce4ff':'#f7c876')}}
-if(s.mode===3){for(let j=0;j<5;j++)rect(28+j*59,132,19,2,['#ed7182','#f4a757','#e8dc6a','#5dd5a7','#77b9ff'][j])}
-if(s.mode===6){const glow=Math.floor(4+Math.sin(t/30)*4);outline(114-glow/2,40-glow/2,96+glow,70+glow,'#cbb5f4')}
+function nursery(t,mode){
+rect(0,0,W,H,'#151c42');for(let x=0;x<320;x+=42){rect(x,15,3,122,'#43577c');rect(x+5,22,30,6,'#8f79af')}
+rect(0,125,320,33,'#29385b');for(let j=0;j<320;j+=22)rect(j,139,13,2,'#625c91');
+for(let j=0;j<5;j++){rect(12+j*62,43,49,70,'#1c3357');outline(12+j*62,43,49,70,'#6399bd')}
+if(mode===0){rect(48,35,216,68,'#21455f');outline(48,35,216,68,'#8bd9dc');type('NEO-PAVLOVIAN',103,63,'#ffe1a6',11);type('CONDITIONING ROOMS',91,80,'#9ff0e6',9)}
+if(mode===1||mode===2||mode===3){for(let j=0;j<5;j++){let x=26+j*59;rect(x,100,34,4,'#e5b882');rect(x+10,90,14,10,'#ba9bd8');rect(x+17,83,4,10,'#6de2b9');rect(x+6,83,4,9,'#f78c92');rect(x+1,83,4,9,'#ffd18e');rect(x+8,108,20,13,'#9ee3ef');rect(x+11,111,16,2,'#b6c1fb');rect(x+11,117,16,2,'#b6c1fb');}}
+if(mode===2){for(let j=0;j<7;j++){const x=(j*47+(t*5)%320)%320;rect(x,48,4,13,'#ff9e83');rect(x+1,42,2,5,'#e6b6f3');}rect(0,24,320,9,Math.floor(t/9)%2?'#982f5a':'#ed7a67');type('AVERSIVE STIMULUS',107,31,'#fff0da',7)}
+if(mode===3){type('LEARNED AVOIDANCE',113,33,'#f9be8f',8);for(let j=0;j<4;j++)rect(50+j*59,67,20,4,'#ef8f9d')}
+if(mode===4){rect(65,37,198,83,'#162945');outline(65,37,198,83,'#d6a177');type('ECONOMIC PLAN',121,52,'#fff0ba',9);for(let j=0;j<5;j++){rect(80,64+j*10,100+j*11,5,['#84d9cb','#d1b275','#a6cb9b','#e79d7a','#99ace6'][j])}}
+if(mode===5){for(let j=0;j<6;j++){rect(21+j*49,61,35,49,'#2d4270');rect(24+j*49,68,29,31,'#759bce');rect(27+j*49,86,23,12,'#f2c2a4');rect(33+j*49,77,12,12,'#e7b6a1')}for(let j=0;j<5;j++){let x=35+j*62;rect(x,34,34,8,'#c5a6f2');type('zzz',x+6,40,'#15283b',7)}type('HYPNOPAEDIA',104,23,'#fdd8ab',9)}
+if(mode===6){rect(61,40,202,70,'#0d2a46');outline(61,40,202,70,'#e7c08e');type('REPEAT != CHOOSE',92,70,'#f6c691',10);type('WHO OWNS THE THOUGHT?',79,90,'#8ff2e6',8)}
+if(mode!==5){for(let j=0;j<4;j++){let x=55+j*56,dy=Math.sin(t/21+j)*1.5;rect(x-7,111+dy,14,9,'#e6baa0');rect(x-10,120+dy,20,13,['#a990db','#e49b8d','#8fc4c9','#e2b782'][j])}}
+scientist(270,120,'#e4ddcf',t);
+rect(0,0,320,15,'#081329');type('CONDITIONING NURSERY / BNW · '+data.id,5,10,'#8feedd',7);
+}
+function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
+if(data.id!=='B002'&&s.mode===2){for(let j=0;j<24;j++){const x=16+(j%8)*36,y=32+Math.floor(j/8)*9;rect(x,y,2,2,j%3?'#9ce4ff':'#f7c876')}}
+if(data.id!=='B002'&&s.mode===3){for(let j=0;j<5;j++)rect(28+j*59,132,19,2,['#ed7182','#f4a757','#e8dc6a','#5dd5a7','#77b9ff'][j])}
+if(data.id!=='B002'&&s.mode===6){const glow=Math.floor(4+Math.sin(t/30)*4);outline(114-glow/2,40-glow/2,96+glow,70+glow,'#cbb5f4')}
 rect(0,157,320,23,'#061528');rect(0,156,320,2,'#6ad8e6');type('ACT '+String(scene+1).padStart(2,'0')+' / '+String(data.scenes.length).padStart(2,'0')+'   '+s.short.toUpperCase().slice(0,22),7,168,'#ffd09d',8);type('ANIMATED CANVAS2D',220,175,'#7ac8c5',6);
 if(!playing)type('PAUSED',146,28,'#ffd08b',10)}
 function save(){try{localStorage.setItem(key,JSON.stringify({scene,inspected:[...inspected],choices}))}catch(e){}}
