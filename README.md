@@ -4,6 +4,8 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 
 ## Play now
 
+- **[PLAY B011 — London's New Curiosity](episodes/B011-londons-new-curiosity.html)** — seven animated scenes of John's celebrity, Linda's soma holiday, Bernard's borrowed popularity, factory and Eton visits, and the feelies date.
+- [Witness Crosswalk 011](witness-crosswalk-011.html) — public curiosity, personal understanding, independent source roots and distinct reactions to shared entertainment.
 - **[PLAY B010 — The Director's Confrontation](episodes/B010-the-directors-confrontation.html)** — seven original Canvas scenes from the public Iceland accusation to the arrival of Linda and John and the Director's exit.
 - [Witness Crosswalk 010](witness-crosswalk-010.html) — the Director's official memory, Linda's firsthand years, John's lived identity, and a crowd that observes without independently verifying.
 - **[PLAY B009 — The Sleeping Visitor](episodes/B009-the-sleeping-visitor.html)** — seven acts: Lenina's soma sleep, Bernard's Mond-approved travel order, and John's unauthorized entry and restraint.
@@ -28,7 +30,7 @@ An **original, animated Canvas2D literary chronicle** interpreting Aldous Huxley
 - [Living Kernel](living-kernel.html) — 18-address map, Git blob source checks, and an append-only *browser-local* SHA-256 witness event chain.
 - [Chapter Atlas](chapter-atlas.html) — complete 18-chapter reading plan, with honest build statuses.
 
-The **novel contains 18 numbered chapters**, and **Chapters One through Ten are committed as playable seven-act stories**. Chapters Eleven–Eighteen remain mapped but not yet released.
+The **novel contains 18 numbered chapters**, and **Chapters One through Eleven are committed as playable seven-act stories**. Chapters Twelve–Eighteen remain mapped but not yet released.
 
 ## B001 story arc
 
@@ -275,3 +277,31 @@ AUDIENCE:     WITNESSED PUBLIC STATEMENTS + LAUGHTER
 **Release total:** 10 of 18 chapters authored, 70 playable story acts, 10 witness crosswalks, 8 chapters mapped but not yet authored. No movie-review track. The real Git commit and GitHub Actions outcome govern source and deployment status; an in-chat sprite preview is an independently authored illustration and not a screenshot of the public site.
 
 **Next natural chapter B011 — London's New Curiosity:** the Director's departure, Bernard's changing popularity, and John as an object of public fascination. Preserve `PUBLIC_INTEREST != HUMAN_UNDERSTANDING`.
+
+
+---
+
+## B011 — London's New Curiosity · Eleventh living boundary (2026-11-11)
+
+**[Play seven-act B011](episodes/B011-londons-new-curiosity.html)** · **[Witness Crosswalk 011](witness-crosswalk-011.html)**
+
+After the Director resigns, the upper-caste public becomes fascinated by John. Bernard enjoys popularity derived from his position as John's guardian; this success strains his relationship with Helmholtz and encourages rash confidence before Mustapha Mond. Linda, ignored by visitors, returns to long soma-induced sleep; a doctor expects her regimen to harm her health, while John keeps caring for her. On tours of industrial London and Eton, John is disturbed by repeated work and selected instructional material. Lenina takes him to a multisensory feely. Though the same entertainment is shown to both, she and John experience it differently. Afterward they part with opposing expectations: she uses soma; John turns to Shakespeare. All art and dialogue are original interpretive work, with the feely's mature content represented symbolically and non-explicitly.
+
+The seven new procedural Canvas2D scenes portray London's celebrity crowds, Linda's secluded rest, Bernard's social attention, a repetitive factory, Eton's restricted learning, a sensory cinema and two separate private responses. The chapter's witness packet distinguishes public attention from John's wishes; Bernard's borrowed fame from independent authority; Linda's lived situation from the doctor's institutional account; and a shared stimulus from the different reactions of John and Lenina.
+
+```text
+LONDON CROWDS --> JOHN'S CELEBRITY ----> BERNARD'S BORROWED FAME
+LINDA ---------> SOMA HOLIDAY ---------> DOCTOR'S UTILITARIAN VIEW
+JOHN ----------> FACTORY / ETON -------> DISTRESS / MISSING SHAKESPEARE
+LENINA + JOHN --> SHARED FEELY --------> DIFFERENT INNER REACTIONS
+                                |
+                             {{ ROOTS }}
+                                |
+          PUBLIC_INTEREST != HUMAN_UNDERSTANDING
+          BORROWED_FAME != INDEPENDENT_AUTHORITY
+          SHARED_STIMULUS != SHARED_INTERPRETATION
+                                |
+                             [ PRESERVE ]
+```
+
+**Release ledger:** 11 playable book chapters × 7 acts = **77 original story acts**; 11 crosswalks; 7 chapters mapped but not yet playable. Canonical registry: **25 Git blob-identified source artifacts**. CI dynamically validates story payloads, relative links, source hashes, all page JavaScript, and attempts GitHub Pages deployment. There is **no film-review track**. B012 naturally tests the instability of Bernard's borrowed social status when John refuses to perform for the audience.
