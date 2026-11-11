@@ -1,13 +1,13 @@
 {
   "schema": "bnw.living-registry.v1",
   "repository": "DavidWise01/bravenewworld",
-  "release": "B001-full-story",
+  "release": "B002-full-story",
   "last_checked": "2026-11-10",
   "canon": {
     "chapters": 18,
-    "playable_book_chapters": 1,
+    "playable_book_chapters": 2,
     "film_labs": 0,
-    "witness_crosswalks": 1
+    "witness_crosswalks": 2
   },
   "chapter_map": [
     "The Hatchery",
@@ -36,31 +36,44 @@
       "bytes": 15531
     },
     {
+      "path": "episodes/B002-the-conditioning-rooms.html",
+      "git_blob_sha": "f9d2d6214b9b948150efc2ec2128c346b033551f",
+      "bytes": 14884
+    },
+    {
       "path": "engine/story-engine.js",
-      "git_blob_sha": "60f234b0026d082029b6ab33cb5c79b8352b296d",
-      "bytes": 8487
+      "git_blob_sha": "955d6c44bbdc766ec704fe5672056475757aa0d2",
+      "bytes": 10665
     },
     {
       "path": "index.html",
-      "git_blob_sha": "2a3b7ea95f913d015ed22791d184cb2fd3199f0f",
-      "bytes": 6468
+      "git_blob_sha": "ef79519b64647baa129a503df2aafe80f8dac0e1",
+      "bytes": 7491
     },
     {
       "path": "chapter-atlas.html",
-      "git_blob_sha": "3159f4e45282be47ff3bd05f14de78748e45a1e8",
-      "bytes": 3775
+      "git_blob_sha": "bcbeb2c272a3aa6df4bb32d580be37ad1182c9d2",
+      "bytes": 3881
     },
     {
       "path": "witness-crosswalk-001.html",
       "git_blob_sha": "644c1efe050242d33ebfecd1cae55d999549bc29",
       "bytes": 4961
+    },
+    {
+      "path": "witness-crosswalk-002.html",
+      "git_blob_sha": "5350b824a11f426149fc43644fa2bb104fe03846",
+      "bytes": 5157
     }
   ],
   "invariants": [
     "EFFICIENCY != HUMAN_WORTH",
     "OBSERVATION != INFERENCE",
     "STORY_MAP != PLAYABLE_RELEASE",
-    "GITHUB_SOURCE != INDEPENDENT_PAGES_MIRROR"
+    "GITHUB_SOURCE != INDEPENDENT_PAGES_MIRROR",
+    "CONDITIONED_RESPONSE != FREE_CHOICE",
+    "REPEATED_MESSAGE != INDEPENDENT_BELIEF",
+    "ONE_INSTALLED_LESSON != MULTIPLE_INDEPENDENT_WITNESSES"
   ],
   "provenance": "One GitHub source ancestry; published Pages is a mirror, not an independent witness; original art and interpretation, no novel passages reproduced."
 }
