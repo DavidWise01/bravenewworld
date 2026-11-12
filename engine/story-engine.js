@@ -276,7 +276,25 @@ if(mode===5){banner('THE RIGHT TO BE UNHAPPY');john(73,111);mond(250,111);rect(1
 if(mode===6){banner('THE ARGUMENT ENDS / LIFE CONTINUES');rect(129,50,63,80,'#172e48');outline(129,50,63,80,'#8bced0');rect(150,68,21,61,'#294868');john(183+Math.sin(t/25)*2,110);mond(76,109);type('NEXT: ISOLATION',110,137,'#ffdea4',8)}
 rect(0,0,320,15,'#081226');type('JOHN + MOND / BNW · '+data.id,6,10,'#9cefe5',8);
 }
-function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B017')unhappyDebate(t,s.mode);else if(data.id==='B016')controllerChoice(t,s.mode);else if(data.id==='B015')somaCrisis(t,s.mode);else if(data.id==='B014')lastHours(t,s.mode);else if(data.id==='B013')unwelcomeConfession(t,s.mode);else if(data.id==='B012')refusedParty(t,s.mode);else if(data.id==='B011')londonCuriosity(t,s.mode);else if(data.id==='B010')directorConfrontation(t,s.mode);else if(data.id==='B009')sleepingVisitor(t,s.mode);else if(data.id==='B008')johnsStory(t,s.mode);else if(data.id==='B007')malpais(t,s.mode);else if(data.id==='B006')reservationJourney(t,s.mode);else if(data.id==='B005')solidarity(t,s.mode);else if(data.id==='B004')bernardHelmholtz(t,s.mode);else if(data.id==='B003')worldState(t,s.mode);else if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
+
+function lighthouseEnding(t,mode){
+rect(0,0,320,180,'#111d39');rect(0,20,320,97,mode===6?'#28354d':'#183c5b');
+for(let j=0;j<9;j++){let x=j*44-10;rect(x,89+(j%3)*5,62,45,mode===6?'#45515a':'#2b6565')}
+rect(0,127,320,31,'#304c4e');for(let j=0;j<27;j++){let x=j*13,y=134+(j%3)*6;rect(x,y,4,7,'#6c8b69')}
+const tower=()=>{rect(129,40,65,94,'#b9b1a3');rect(136,46,51,85,'#e4d4bb');rect(121,34,81,12,'#40516b');rect(130,24,62,12,'#d1a36c');rect(141,28,40,6,Math.floor(t/15)%2?'#ffe89e':'#e2a759');rect(154,65,17,27,'#34516b');rect(157,70,11,21,'#b5d4cb');rect(143,112,29,21,'#5a5363');rect(150,118,16,15,'#172f43')};
+const john=(x,y)=>{scientist(x,y,'#c5b29b',t);rect(x-8,y-24,16,6,'#8c6d51')};
+const lens=(x,y)=>{rect(x-13,y-10,26,15,'#3c536f');rect(x-8,y-15,14,6,'#7d7991');rect(x-3,y-7,9,9,'#87d6df');rect(x-15,y+5,3,18,'#adb6c2');rect(x+12,y+5,3,18,'#adb6c2')};
+const banner=s=>{rect(11,17,298,20,'#0d2842');outline(11,17,298,20,'#93d6d2');type(s,17,30,'#ffe0b0',8)};
+if(mode===0){tower();john(238,120);banner('THE LIGHTHOUSE / A PLACE APART')}
+if(mode===1){tower();john(235,118);rect(42,108,50,15,'#8a6f5b');rect(49,102,18,6,'#e0c08a');banner('WORK / MEMORY / SOLITUDE')}
+if(mode===2){tower();john(220,119);scientist(58,116,'#778ca1',t);banner('AN ONLOOKER APPEARS')}
+if(mode===3){tower();john(224,119);lens(74,98);scientist(74,119,'#8295ba',t);banner('A CAMERA / A REPEATED STORY')}
+if(mode===4){tower();john(235,116);for(let j=0;j<7;j++){let x=18+j*40;scientist(x,121,['#c99aad','#8db4c6','#c6ac7f'][j%3],t)}banner('THE CROWD ARRIVES')}
+if(mode===5){tower();john(215,118);for(let j=0;j<8;j++){let x=20+j*37;scientist(x,122,['#bf91b0','#94adc7','#d9a778'][j%3],t);rect(x,81+Math.sin(t/17+j)*6,13,3,'#d9bbca')}banner('DISTRESS / NO PRIVACY')}
+if(mode===6){rect(0,20,320,107,'#192c43');tower();rect(0,130,320,24,'#364a4c');banner('THE FINAL SILENCE');type('A TRAGIC LOSS',105,143,'#f2d4bd',10)}
+rect(0,0,320,15,'#071328');type('LIGHTHOUSE / BNW · '+data.id,6,10,'#9cf0e3',8);
+}
+function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B018')lighthouseEnding(t,s.mode);else if(data.id==='B017')unhappyDebate(t,s.mode);else if(data.id==='B016')controllerChoice(t,s.mode);else if(data.id==='B015')somaCrisis(t,s.mode);else if(data.id==='B014')lastHours(t,s.mode);else if(data.id==='B013')unwelcomeConfession(t,s.mode);else if(data.id==='B012')refusedParty(t,s.mode);else if(data.id==='B011')londonCuriosity(t,s.mode);else if(data.id==='B010')directorConfrontation(t,s.mode);else if(data.id==='B009')sleepingVisitor(t,s.mode);else if(data.id==='B008')johnsStory(t,s.mode);else if(data.id==='B007')malpais(t,s.mode);else if(data.id==='B006')reservationJourney(t,s.mode);else if(data.id==='B005')solidarity(t,s.mode);else if(data.id==='B004')bernardHelmholtz(t,s.mode);else if(data.id==='B003')worldState(t,s.mode);else if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
 if(data.id==='B001'&&s.mode===2){for(let j=0;j<24;j++){const x=16+(j%8)*36,y=32+Math.floor(j/8)*9;rect(x,y,2,2,j%3?'#9ce4ff':'#f7c876')}}
 if(data.id==='B001'&&s.mode===3){for(let j=0;j<5;j++)rect(28+j*59,132,19,2,['#ed7182','#f4a757','#e8dc6a','#5dd5a7','#77b9ff'][j])}
 if(data.id==='B001'&&s.mode===6){const glow=Math.floor(4+Math.sin(t/30)*4);outline(114-glow/2,40-glow/2,96+glow,70+glow,'#cbb5f4')}
