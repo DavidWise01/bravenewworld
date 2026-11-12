@@ -259,7 +259,24 @@ if(mode===5){sign('BERNARD / THE PRICE OF EXILE');desk();mond(221,81);bern(70,11
 if(mode===6){sign('STABILITY OR FREEDOM?');rect(35,55,116,66,'#22495b');rect(168,55,116,66,'#4a3c61');outline(35,55,116,66,'#76d4cf');outline(168,55,116,66,'#d9a6c5');type('STABILITY',48,69,'#e2f4dd',9);type('FREEDOM',185,69,'#ffe0ae',9);mond(99,102);john(219,103);type('WHO CHOOSES?',116,133,'#ffd7a8',8)}
 rect(0,0,320,15,'#081126');type('CONTROLLER CHAMBER / BNW · '+data.id,5,10,'#98eee3',8);
 }
-function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B016')controllerChoice(t,s.mode);else if(data.id==='B015')somaCrisis(t,s.mode);else if(data.id==='B014')lastHours(t,s.mode);else if(data.id==='B013')unwelcomeConfession(t,s.mode);else if(data.id==='B012')refusedParty(t,s.mode);else if(data.id==='B011')londonCuriosity(t,s.mode);else if(data.id==='B010')directorConfrontation(t,s.mode);else if(data.id==='B009')sleepingVisitor(t,s.mode);else if(data.id==='B008')johnsStory(t,s.mode);else if(data.id==='B007')malpais(t,s.mode);else if(data.id==='B006')reservationJourney(t,s.mode);else if(data.id==='B005')solidarity(t,s.mode);else if(data.id==='B004')bernardHelmholtz(t,s.mode);else if(data.id==='B003')worldState(t,s.mode);else if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
+
+function unhappyDebate(t,mode){
+rect(0,0,W,H,'#10182f');for(let j=0;j<8;j++){let x=j*42;rect(x,16,38,113,'#313b62');rect(x+4,23,30,87,'#1f3252');for(let k=0;k<7;k++)rect(x+8,31+k*11,22,4,['#a59a96','#7c9faf','#c0a77f'][k%3])}
+rect(0,133,W,26,'#29374f');for(let x=0;x<320;x+=22)rect(x,142,15,2,'#526e88');
+const who=(x,y,coat,hair)=>{scientist(x,y,coat,t);rect(x-8,y-24,16,6,hair)};
+const john=(x,y)=>who(x,y,'#d3b69c','#896b51'),mond=(x,y)=>who(x,y,'#d5c18f','#777586');
+const banner=s=>{rect(17,21,286,22,'#102d46');outline(17,21,286,22,'#86d8d1');type(s,25,35,'#ffdda7',8)};
+const desk=()=>{rect(110,101,102,25,'#7d5970');rect(106,97,110,8,'#e7b994');rect(118,119,84,5,'#3c415e')};
+if(mode===0){banner('COMFORT / WHO DECIDES?');desk();john(71,111);mond(253,108);rect(139,64,44,23,'#6a4d71');type('?',155,80,'#ffdcad',17)}
+if(mode===1){banner('SPIRITUAL NEED / STATE POLICY');desk();john(71,110);mond(253,108);rect(144,54,38,40,'#bba483');rect(148,58,30,32,'#f7d8a2');type('WHY',150,79,'#473b57',9)}
+if(mode===2){banner('AGE / ATTACHMENT / LOSS');desk();john(69,112);mond(251,109);rect(132,56,58,32,'#4c5878');type('MEMORY',141,75,'#ffdaa3',9);rect(150,82,23,3,'#d19db0')}
+if(mode===3){banner('SOMA / RELIEF OR CONTROL?');desk();john(69,112);mond(251,109);for(let j=0;j<5;j++){let x=120+j*18;rect(x,64,12,21,'#7b6594');rect(x+2,61,8,4,'#edd4c4');rect(x+3,69,6,7,'#e8b4e4')}type('SOMA',142,92,'#ffdda4',8)}
+if(mode===4){banner('RISK / CHOICE / UNCERTAINTY');john(68,112);mond(254,110);rect(121,58,80,55,'#1a4159');outline(121,58,80,55,'#7cd2d3');for(let j=0;j<6;j++)rect(130+j*10,94-Math.sin((t+j*19)/20)*8,6,8,'#f2b37f');type('CHOOSE',140,72,'#ffd9a4',9)}
+if(mode===5){banner('THE RIGHT TO BE UNHAPPY');john(73,111);mond(250,111);rect(125,55,71,51,'#493e67');outline(125,55,71,51,'#c9b0c6');type('RIGHT?',140,74,'#ffdbab',9);type('COST?',144,91,'#a8eee5',9)}
+if(mode===6){banner('THE ARGUMENT ENDS / LIFE CONTINUES');rect(129,50,63,80,'#172e48');outline(129,50,63,80,'#8bced0');rect(150,68,21,61,'#294868');john(183+Math.sin(t/25)*2,110);mond(76,109);type('NEXT: ISOLATION',110,137,'#ffdea4',8)}
+rect(0,0,320,15,'#081226');type('JOHN + MOND / BNW · '+data.id,6,10,'#9cefe5',8);
+}
+function paint(t){const s=data.scenes[scene];g.setTransform(3,0,0,3,0,0);g.imageSmoothingEnabled=false;if(data.id==='B017')unhappyDebate(t,s.mode);else if(data.id==='B016')controllerChoice(t,s.mode);else if(data.id==='B015')somaCrisis(t,s.mode);else if(data.id==='B014')lastHours(t,s.mode);else if(data.id==='B013')unwelcomeConfession(t,s.mode);else if(data.id==='B012')refusedParty(t,s.mode);else if(data.id==='B011')londonCuriosity(t,s.mode);else if(data.id==='B010')directorConfrontation(t,s.mode);else if(data.id==='B009')sleepingVisitor(t,s.mode);else if(data.id==='B008')johnsStory(t,s.mode);else if(data.id==='B007')malpais(t,s.mode);else if(data.id==='B006')reservationJourney(t,s.mode);else if(data.id==='B005')solidarity(t,s.mode);else if(data.id==='B004')bernardHelmholtz(t,s.mode);else if(data.id==='B003')worldState(t,s.mode);else if(data.id==='B002')nursery(t,s.mode);else if(s.mode===0)hallway(t);else{lab(t,s.mode);for(let j=0;j<3;j++)student(45+j*29,129,j,t);scientist(229,127,'#f1ddbf',t)}
 if(data.id==='B001'&&s.mode===2){for(let j=0;j<24;j++){const x=16+(j%8)*36,y=32+Math.floor(j/8)*9;rect(x,y,2,2,j%3?'#9ce4ff':'#f7c876')}}
 if(data.id==='B001'&&s.mode===3){for(let j=0;j<5;j++)rect(28+j*59,132,19,2,['#ed7182','#f4a757','#e8dc6a','#5dd5a7','#77b9ff'][j])}
 if(data.id==='B001'&&s.mode===6){const glow=Math.floor(4+Math.sin(t/30)*4);outline(114-glow/2,40-glow/2,96+glow,70+glow,'#cbb5f4')}
